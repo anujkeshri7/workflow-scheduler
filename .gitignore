@@ -1,0 +1,20 @@
+# Environment Variables (CRITICAL: DO NOT COMMIT KEYS)
+.env
+*.env
+credentials.json
+client_secrets.json
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# System and Temp Files
+.telegram_sender.lock
+.sent_posts_history.json
+*.tmp
+*.log
+
+# Heavy raw media (we use public URLs in cloud)
+assets/music/custom/*.webm
+assets/music/custom/temp_*

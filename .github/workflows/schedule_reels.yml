@@ -1,0 +1,43 @@
+name: Instagram Reels Cloud Scheduler
+
+on:
+  schedule:
+    # 06:30 AM IST = 01:00 UTC
+    - cron: '0 1 * * *'
+    # 07:10 AM IST = 01:40 UTC
+    - cron: '40 1 * * *'
+    # 08:00 AM IST = 02:30 UTC
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+    inputs:
+      post_index:
+        description: 'Post Index (0 for Post #1, 1 for Post #2, 2 for Post #3)'
+        required: false
+        default: '0'
+
+jobs:
+  publish-reel:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests python-dotenv
+
+      - name: Execute Cloud Publish
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          POST_INDEX: ${{ github.event.inputs.post_index }}
+        run: |
+          python github_cloud_publisher.py
