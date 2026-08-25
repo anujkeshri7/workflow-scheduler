@@ -82,7 +82,7 @@ Every caption MUST strictly follow this exact 4-part structure:
 
 ## 5. Rendering, Video Reel Generation & Delivery
 1. **Render 1080x1350 Visuals**: Run `python overlay.py` to render the multi-template posts.
-2. **Generate 9:16 Reels with Music**: Run `python video_generator.py` to produce 1080x1920 MP4 videos with mood-matched background music.
+2. **Generate 9:16 Reels with Music**: Run `python video_generator.py` to produce 1080x1920 MP4 videos with trimmed beat-drop audio hooks.
 3. **Telegram Delivery**: Run `python clear_batch_history.py; python telegram_sender.py` to deliver images, videos and formatted captions to Telegram.
-4. **Instagram Auto-Publish & Cloud Scheduling**: Run `python meta_reel_publisher.py` to publish Post #1 immediately and cloud-schedule Post #2 at +45m and Post #3 at +90m.
-5. In chat, provide **Bollywood Music Recommendations** (Reels audio suggestions) for each story.
+4. **Queue for 9-Slot Cloud Scheduling**: Run `python queue_manager.py` to append the newly generated posts to `posts_queue.json` and sync with GitHub.
+5. In chat, provide **Bollywood Music Recommendations** for each story.

@@ -4,6 +4,7 @@ import time
 import datetime
 import requests
 import re
+import subprocess
 import sys
 
 if sys.stdout.encoding != 'utf-8':
@@ -16,142 +17,202 @@ META_TOKEN = os.getenv('META_ACCESS_TOKEN')
 IG_ACCOUNT_ID = os.getenv('IG_ACCOUNT_ID')
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
-DATA_FILE = "daily_news_data.json"
+
+QUEUE_FILE = "posts_queue.json"
 GRAPH_VERSION = "v19.0"
+
+def get_current_ist_time():
+    tz_ist = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+    return datetime.datetime.now(tz_ist)
 
 def send_telegram_alert(message):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        print("Notice: Telegram credentials not set in cloud environment.")
         return
     try:
         url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
         payload = {
             'chat_id': TELEGRAM_CHAT_ID,
             'text': message,
-            'parse_mode': 'HTML'
+            'parse_mode': 'HTML',
+            'disable_web_page_preview': True
         }
-        requests.post(url, json=payload, timeout=15)
+        requests.post(url, json=payload, timeout=20)
     except Exception as e:
         print(f"Telegram alert error: {e}")
 
-def determine_post_index_by_time():
+def create_and_publish_reel(video_url, caption):
     """
-    Determines which post to publish based on current IST time:
-    - ~06:30 AM IST -> Post 1 (index 0)
-    - ~07:10 AM IST -> Post 2 (index 1)
-    - ~08:00 AM IST -> Post 3 (index 2)
+    Creates Reel container on Meta API, waits for processing, and publishes live.
     """
-    tz_ist = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
-    now_ist = datetime.datetime.now(tz_ist)
-    hour = now_ist.hour
-    minute = now_ist.minute
-    total_mins = hour * 60 + minute
+    if not META_TOKEN or not IG_ACCOUNT_ID:
+        print("[ERROR] META_ACCESS_TOKEN or IG_ACCOUNT_ID missing in environment.")
+        return None
 
-    print(f"Current Cloud Runner IST Time: {now_ist.strftime('%Y-%m-%d %I:%M %p')}")
-
-    # Slot 1: Around 06:30 AM (6:15 - 6:50) -> mins: 375 - 410
-    if 375 <= total_mins <= 415:
-        return 0
-    # Slot 2: Around 07:10 AM (6:55 - 7:35) -> mins: 415 - 455
-    elif 416 <= total_mins <= 455:
-        return 1
-    # Slot 3: Around 08:00 AM (7:40 - 8:30) -> mins: 460 - 510
-    elif 456 <= total_mins <= 510:
-        return 2
-    else:
-        # Default or fallback
-        return 0
-
-def publish_single_post_to_instagram(post_idx):
-    if not os.path.exists(DATA_FILE):
-        print(f"Error: {DATA_FILE} not found.")
-        return False
-
-    with open(DATA_FILE, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    posts = data.get("posts", [])
-    if post_idx >= len(posts):
-        print(f"Error: Post index {post_idx} out of range (total posts: {len(posts)})")
-        return False
-
-    post = posts[post_idx]
-    post_num = post_idx + 1
-    caption = post.get("caption", "")
     clean_caption = re.sub(r'<a\s+(?:[^>]*?\s+)?href="([^"]*)"[^>]*>(.*?)<\/a>', r'\2 (\1)', caption)
-    
-    # Check public video URL or host on the fly
-    public_video_url = post.get("public_video_url")
-    if not public_video_url:
-        # Try hosting local video if available in runner
-        video_path = post.get("video_path")
-        if video_path and os.path.exists(video_path):
-            from video_hoster import upload_video_to_public_host
-            public_video_url = upload_video_to_public_host(video_path)
-            
-    if not public_video_url:
-        print(f"Error: No public video URL available for Post {post_num}.")
-        return False
 
-    print(f"\n=======================================================")
-    print(f"Publishing Post #{post_num} to Instagram Reels via Cloud Runner")
-    print(f"=======================================================\n")
-
-    # Step 1: Create Container
+    # 1. Create Media Container
     c_url = f"https://graph.facebook.com/{GRAPH_VERSION}/{IG_ACCOUNT_ID}/media"
     c_payload = {
         'media_type': 'REELS',
-        'video_url': public_video_url,
+        'video_url': video_url,
         'caption': clean_caption,
         'access_token': META_TOKEN
     }
     
-    c_res = requests.post(c_url, data=c_payload, timeout=30).json()
-    container_id = c_res.get('id')
-    if not container_id:
-        print(f"[FAIL] Container error: {c_res}")
-        send_telegram_alert(f"❌ <b>Cloud Scheduler Failed</b>: Post #{post_num} container creation error: {c_res}")
-        return False
+    try:
+        c_res = requests.post(c_url, data=c_payload, timeout=30).json()
+        container_id = c_res.get('id')
+        if not container_id:
+            print(f"[FAIL] Container creation failed: {c_res}")
+            return None
+        print(f"[OK] Container ID: {container_id}. Waiting for processing...")
+    except Exception as e:
+        print(f"Network error during container creation: {e}")
+        return None
 
-    print(f"[OK] Container ID: {container_id}. Waiting for processing...")
-
-    # Step 2: Poll Processing
+    # 2. Wait for Processing
     s_url = f"https://graph.facebook.com/{GRAPH_VERSION}/{container_id}"
     for attempt in range(1, 16):
-        s_res = requests.get(s_url, params={'fields': 'status_code', 'access_token': META_TOKEN}, timeout=20).json()
-        status = s_res.get('status_code', '').upper()
-        if status == 'FINISHED':
-            print(f"[OK] Processing Finished ({attempt * 5}s)!")
-            break
-        elif status in ['ERROR', 'EXPIRED']:
-            print(f"[FAIL] Processing error: {s_res}")
-            return False
-        time.sleep(5)
+        try:
+            s_res = requests.get(s_url, params={'fields': 'status_code', 'access_token': META_TOKEN}, timeout=20).json()
+            status = s_res.get('status_code', '').upper()
+            if status == 'FINISHED':
+                print(f"[OK] Reel processing complete ({attempt * 5}s)!")
+                break
+            elif status in ['ERROR', 'EXPIRED']:
+                print(f"[FAIL] Processing failed: {s_res}")
+                return None
+            time.sleep(5)
+        except Exception as e:
+            print(f"Polling error: {e}")
+            time.sleep(5)
 
-    # Step 3: Publish Live
+    # 3. Publish Live
     p_url = f"https://graph.facebook.com/{GRAPH_VERSION}/{IG_ACCOUNT_ID}/media_publish"
-    p_res = requests.post(p_url, data={'creation_id': container_id, 'access_token': META_TOKEN}, timeout=30).json()
-    media_id = p_res.get('id')
+    try:
+        p_res = requests.post(p_url, data={'creation_id': container_id, 'access_token': META_TOKEN}, timeout=30).json()
+        media_id = p_res.get('id')
+        if media_id:
+            print(f"[SUCCESS] Reel successfully PUBLISHED LIVE! Instagram Media ID: {media_id}")
+            return media_id
+        else:
+            print(f"[FAIL] Media publish error: {p_res}")
+            return None
+    except Exception as e:
+        print(f"Network error during publishing: {e}")
+        return None
+
+def process_queue():
+    now_ist = get_current_ist_time()
+    time_str = now_ist.strftime('%Y-%m-%d %I:%M %p IST')
     
+    print(f"\n=======================================================")
+    print(f"Instagram Cloud Scheduler Triggered at {time_str}")
+    print(f"=======================================================\n")
+
+    if not os.path.exists(QUEUE_FILE):
+        print(f"Error: {QUEUE_FILE} not found.")
+        send_telegram_alert(f"⚠️ <b>Queue Missing Alert</b>\n\n<code>{QUEUE_FILE}</code> file repository me nahi mila.")
+        return
+
+    with open(QUEUE_FILE, "r", encoding="utf-8") as f:
+        queue_data = json.load(f)
+
+    pending = queue_data.get("pending_posts", [])
+    published = queue_data.get("published_posts", [])
+
+    # Case 1: Empty Queue
+    if not pending:
+        print(f"[EMPTY QUEUE] No pending posts found to publish for slot at {time_str}.")
+        send_telegram_alert(
+            f"⚠️ <b>Instagram Queue Empty Alert</b>\n\n"
+            f"🕒 <b>Slot Time</b>: <code>{time_str}</code>\n\n"
+            f"Queue me publish karne ke liye koi news reel nahi bachi hai.\n"
+            f"Agle slot ke liye Antigravity me workflow run karke queue refill karein!"
+        )
+        return
+
+    # Case 2: Pop First Item (FIFO)
+    target_post = pending.pop(0)
+    post_id = target_post.get("id", "unknown")
+    headline = target_post.get("headline", "")
+    caption = target_post.get("caption", "")
+    video_url = target_post.get("public_video_url", "")
+
+    print(f"Consuming Next Post from Queue:")
+    print(f"ID: {post_id}")
+    print(f"Headline: {headline[:50]}...")
+    print(f"Video URL: {video_url}\n")
+
+    if not video_url:
+        print("Error: No public video URL in post object.")
+        return
+
+    # Execute Publishing on Instagram
+    media_id = create_and_publish_reel(video_url, caption)
+
     if media_id:
-        print(f"[SUCCESS] Post #{post_num} PUBLISHED LIVE! Instagram Media ID: {media_id}")
+        target_post["status"] = "PUBLISHED"
+        target_post["published_at_ist"] = time_str
+        target_post["ig_media_id"] = media_id
+        target_post["published_by"] = "GitHub Actions Cloud Runner"
+        published.append(target_post)
+
+        queue_data["pending_posts"] = pending
+        queue_data["published_posts"] = published
+
+        # Save Queue File
+        with open(QUEUE_FILE, "w", encoding="utf-8") as f:
+            json.dump(queue_data, f, indent=2, ensure_ascii=False)
+
+        remaining_count = len(pending)
+        print(f"\n[OK] Queue Updated: {remaining_count} pending posts remaining.")
+
+        # Send Telegram Success
+        clean_title = headline.replace('\n', ' ')
         send_telegram_alert(
             f"🎉 <b>Instagram Reel Live</b>\n\n"
-            f"Post #{post_num} has been successfully published to Instagram!\n"
-            f"<b>Headline</b>: {post.get('headline', '').replace(chr(10), ' ')}\n"
-            f"<b>Media ID</b>: <code>{media_id}</code>"
+            f"🕒 <b>Published At</b>: <code>{time_str}</code>\n"
+            f"📰 <b>Headline</b>: {clean_title}\n"
+            f"🆔 <b>Instagram Media ID</b>: <code>{media_id}</code>\n\n"
+            f"📊 <b>Remaining in Queue</b>: <b>{remaining_count} Posts</b>"
         )
-        return True
+
+        # Check if queue is now 0
+        if remaining_count == 0:
+            send_telegram_alert(
+                f"🔔 <b>Queue Exhausted Reminder</b>\n\n"
+                f"Aapki queue ke sabhi news reels Instagram par publish ho chuke hain!\n"
+                f"Agle upcoming slots ke liye Antigravity me workflow run karke queue refill karein. 🚀"
+            )
+
+        # Commit and Push State to GitHub
+        commit_and_push_queue()
     else:
-        print(f"[FAIL] Media publish error: {p_res}")
-        send_telegram_alert(f"❌ <b>Publish Error</b> for Post #{post_num}: {p_res}")
-        return False
+        print("[FAIL] Publishing failed. Putting post back into queue.")
+        pending.insert(0, target_post)
+        queue_data["pending_posts"] = pending
+        with open(QUEUE_FILE, "w", encoding="utf-8") as f:
+            json.dump(queue_data, f, indent=2, ensure_ascii=False)
+        send_telegram_alert(
+            f"❌ <b>Publish Error Alert</b>\n\n"
+            f"Slot <code>{time_str}</code> par Reel publish nahi ho payi. Post queue me safe hai aur agle trigger par retry hogi."
+        )
+
+def commit_and_push_queue():
+    """
+    Commits and pushes updated posts_queue.json in GitHub Actions environment.
+    """
+    try:
+        subprocess.run(["git", "config", "user.name", "github-actions[bot]"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.run(["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.run(["git", "add", QUEUE_FILE], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.run(["git", "commit", "-m", "chore: update queue state after cloud publish [skip ci]"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.run(["git", "push"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        print("[OK] Updated queue state successfully committed and pushed to repository.")
+    except Exception as e:
+        print(f"Git commit error in runner: {e}")
 
 if __name__ == "__main__":
-    env_post_idx = os.getenv("POST_INDEX")
-    if env_post_idx is not None and env_post_idx.isdigit():
-        target_idx = int(env_post_idx)
-    else:
-        target_idx = determine_post_index_by_time()
-
-    print(f"Targeting Post Index: {target_idx} (Post #{target_idx + 1})")
-    publish_single_post_to_instagram(target_idx)
+    process_queue()
