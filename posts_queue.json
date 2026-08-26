@@ -2,18 +2,6 @@
   "queue_version": "1.0",
   "pending_posts": [
     {
-      "id": "post_ba06b4850aba",
-      "template": "politics",
-      "category": "MEGA IT DEAL",
-      "headline": "TCS KA PORSCHE KE SATH MEGA DEAL:\nRS. 11,500 CRORE KA HISTORIC AI MOBILITY PACT!",
-      "subheadline": "Tata TCS ne Porsche AG ke sath 5-year strategic agreement sign kiya. Porsche ki IT subsidiary MHP ko RS. 3,575 Crore (€320M) me kiya acquire.",
-      "highlighted_fact": "€1.25 Billion (Rs. 11,500 Cr) | AI Centre",
-      "caption": "🚗 Mega Tech Deal: TCS aur Porsche AG ke beech hua RS. 11,500 Crore (€1.25B) ka historic AI partnership! 🇮🇳🇩🇪\n\nTata Consultancy Services (TCS) ne European automotive market me ab tak ka sabse bada dhamaka kar diya hai! TCS ne luxury sports car maker Porsche AG ke sath 5-saal ka €1.25 Billion (lagbhag RS. 11,500 Crore) ka strategic pact sign kiya hai. Iske sath hi TCS Porsche ki digital consulting subsidiary MHP ko €320 Million (RS. 3,575 Crore) me acquire karegi. Dono companiyan milkar next-generation AI Mobility Centre of Excellence banayengi jo automated driving aur digital manufacturing ko naye levels par le jayega!\n\nKya Tata TCS ka yeh acquisition Indian IT sector ke liye game-changer साबित hoga? Comment karein! 👇💬\n\nSource: <a href=\"https://indianexpress.com/article/business/tcs-acquires-porsche-it-arm-rs-3575-crore-five-year-deal-10847702/\">Indian Express</a>\n\n#tcs #porsche #tatagroup #aimobility #businessnews",
-      "public_video_url": "https://files.catbox.moe/kgepdq.mp4",
-      "created_at_ist": "2026-08-25 11:28 PM IST",
-      "status": "PENDING"
-    },
-    {
       "id": "post_0aad9875ecda",
       "template": "breaking",
       "category": "MARKET & COMMODITY",
@@ -82,6 +70,21 @@
       "status": "PUBLISHED",
       "published_at_ist": "2026-08-26 09:01 AM IST",
       "ig_media_id": "18619965232058351",
+      "published_by": "GitHub Actions Cloud Runner"
+    },
+    {
+      "id": "post_ba06b4850aba",
+      "template": "politics",
+      "category": "MEGA IT DEAL",
+      "headline": "TCS KA PORSCHE KE SATH MEGA DEAL:\nRS. 11,500 CRORE KA HISTORIC AI MOBILITY PACT!",
+      "subheadline": "Tata TCS ne Porsche AG ke sath 5-year strategic agreement sign kiya. Porsche ki IT subsidiary MHP ko RS. 3,575 Crore (€320M) me kiya acquire.",
+      "highlighted_fact": "€1.25 Billion (Rs. 11,500 Cr) | AI Centre",
+      "caption": "🚗 Mega Tech Deal: TCS aur Porsche AG ke beech hua RS. 11,500 Crore (€1.25B) ka historic AI partnership! 🇮🇳🇩🇪\n\nTata Consultancy Services (TCS) ne European automotive market me ab tak ka sabse bada dhamaka kar diya hai! TCS ne luxury sports car maker Porsche AG ke sath 5-saal ka €1.25 Billion (lagbhag RS. 11,500 Crore) ka strategic pact sign kiya hai. Iske sath hi TCS Porsche ki digital consulting subsidiary MHP ko €320 Million (RS. 3,575 Crore) me acquire karegi. Dono companiyan milkar next-generation AI Mobility Centre of Excellence banayengi jo automated driving aur digital manufacturing ko naye levels par le jayega!\n\nKya Tata TCS ka yeh acquisition Indian IT sector ke liye game-changer साबित hoga? Comment karein! 👇💬\n\nSource: <a href=\"https://indianexpress.com/article/business/tcs-acquires-porsche-it-arm-rs-3575-crore-five-year-deal-10847702/\">Indian Express</a>\n\n#tcs #porsche #tatagroup #aimobility #businessnews",
+      "public_video_url": "https://files.catbox.moe/kgepdq.mp4",
+      "created_at_ist": "2026-08-25 11:28 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 12:52 PM IST",
+      "ig_media_id": "18182179003416638",
       "published_by": "GitHub Actions Cloud Runner"
     }
   ]
