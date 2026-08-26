@@ -2,18 +2,6 @@
   "queue_version": "1.0",
   "pending_posts": [
     {
-      "id": "post_india_china_beijing_summit",
-      "template": "politics",
-      "category": "GLOBAL DIPLOMACY",
-      "headline": "INDIA-CHINA BORDER TALKS MEIN BADI PROGRESS:\nBEIJING MEIN DOVAL AUR WANG YI KI AHAM BAITHAK!",
-      "subheadline": "25th Round Border Talks me dono deshon ne rishton ke normalcy par lautne par banai sehmati. LAC par disengagement aur shanti framework par charcha.",
-      "highlighted_fact": "25th Round Border Talks | Beijing Summit",
-      "caption": "🤝 Geopolitical Breakthrough: Beijing me Ajit Doval aur Wang Yi ke beech 25th round border talks safal! 🇮🇳🇨🇳\n\nBharat aur China ke rishton me ek naya aur sakaratmak mod dekhne ko mila hai! Beijing me aayojit 25th Special Representatives meeting me National Security Advisor Ajit Doval aur Chinese Foreign Minister Wang Yi ne LAC par shanti aur border disengagement par detailed charcha ki. Dono deshon ne aadhikarik bayaan jari karte hue kaha ki bilateral rishte 'steadily normalcy ki taraf badh rahe hain'. Aane wale BRICS Summit se pehle is baithak ko diplomatic dhang se behad ahem mana ja raha hai!\n\nKya Bharat aur China ke border vivad ka sthayi hal nikal sakta hai? Apni rai comment karein! 👇💬\n\nSource: <a href=\"https://www.thehindu.com\">The Hindu</a>\n\n#indiachina #ajitdoval #geopolitics #brics2026 #breakingnews",
-      "public_video_url": "https://files.catbox.moe/k5lgtc.mp4",
-      "created_at_ist": "2026-08-25 10:45 PM IST",
-      "status": "PENDING"
-    },
-    {
       "id": "post_ba06b4850aba",
       "template": "politics",
       "category": "MEGA IT DEAL",
@@ -79,6 +67,21 @@
       "status": "PUBLISHED",
       "published_at_ist": "2026-08-26 08:21 AM IST",
       "ig_media_id": "18126758290810429",
+      "published_by": "GitHub Actions Cloud Runner"
+    },
+    {
+      "id": "post_india_china_beijing_summit",
+      "template": "politics",
+      "category": "GLOBAL DIPLOMACY",
+      "headline": "INDIA-CHINA BORDER TALKS MEIN BADI PROGRESS:\nBEIJING MEIN DOVAL AUR WANG YI KI AHAM BAITHAK!",
+      "subheadline": "25th Round Border Talks me dono deshon ne rishton ke normalcy par lautne par banai sehmati. LAC par disengagement aur shanti framework par charcha.",
+      "highlighted_fact": "25th Round Border Talks | Beijing Summit",
+      "caption": "🤝 Geopolitical Breakthrough: Beijing me Ajit Doval aur Wang Yi ke beech 25th round border talks safal! 🇮🇳🇨🇳\n\nBharat aur China ke rishton me ek naya aur sakaratmak mod dekhne ko mila hai! Beijing me aayojit 25th Special Representatives meeting me National Security Advisor Ajit Doval aur Chinese Foreign Minister Wang Yi ne LAC par shanti aur border disengagement par detailed charcha ki. Dono deshon ne aadhikarik bayaan jari karte hue kaha ki bilateral rishte 'steadily normalcy ki taraf badh rahe hain'. Aane wale BRICS Summit se pehle is baithak ko diplomatic dhang se behad ahem mana ja raha hai!\n\nKya Bharat aur China ke border vivad ka sthayi hal nikal sakta hai? Apni rai comment karein! 👇💬\n\nSource: <a href=\"https://www.thehindu.com\">The Hindu</a>\n\n#indiachina #ajitdoval #geopolitics #brics2026 #breakingnews",
+      "public_video_url": "https://files.catbox.moe/k5lgtc.mp4",
+      "created_at_ist": "2026-08-25 10:45 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 09:01 AM IST",
+      "ig_media_id": "18619965232058351",
       "published_by": "GitHub Actions Cloud Runner"
     }
   ]
