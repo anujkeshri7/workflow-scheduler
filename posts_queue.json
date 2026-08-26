@@ -2,18 +2,6 @@
   "queue_version": "1.0",
   "pending_posts": [
     {
-      "id": "post_yash_toxic_advance_sales",
-      "template": "film",
-      "category": "BOLLYWOOD BLOCKBUSTER",
-      "headline": "YASH KI 'TOXIC' KA BOX OFFICE TSUNAMI:\nRELEASE SE PEHLE RS. 50 CRORE ADVANCE BOOKING!",
-      "subheadline": "KGF superstar Yash ki upcoming movie ne worldwide ticket sales me racha itihaas. Theatrical release se pehle hi tode pre-sales ke saare records.",
-      "highlighted_fact": "Rs. 50+ Cr Advance Sales | Global Record",
-      "caption": "🎬 Box Office Storm: Yash ki 'Toxic' ne release se pehle hi tod dale records, RS. 50 Crore advance booking paar! 💥🍿\n\nKGF superstar Yash ki agli mega-budget action thriller film 'Toxic: A Fairy Tale for Grown-ups' ne release se pehle hi box office par aag laga di hai! Worldwide advance bookings me film ne RS. 50 Crore ka historic milestone cross kar liya hai. Geetu Mohandas ke direction me ban rahi is high-octane movie ko lekar global audience me jabardast craze dekha ja raha hai. Trade analysts ke mutabik yeh film opening day par Indian cinema ke sabse bade collection records tod sakti hai!\n\nKya Yash ki 'Toxic' KGF Chapter 2 ke opening records ko peeche chhod payegi? Comment karein! 👇💬\n\nSource: <a href=\"https://www.filmibeat.com\">FilmiBeat</a>\n\n#yash #toxicmovie #kgf #boxofficerecords #bollywoodnews",
-      "public_video_url": "https://files.catbox.moe/0zns8y.mp4",
-      "created_at_ist": "2026-08-25 10:45 PM IST",
-      "status": "PENDING"
-    },
-    {
       "id": "post_apple_m6_m5_ultra_unveil",
       "template": "breaking",
       "category": "TECH & AI REVOLUTION",
@@ -74,5 +62,21 @@
       "status": "PENDING"
     }
   ],
-  "published_posts": []
+  "published_posts": [
+    {
+      "id": "post_yash_toxic_advance_sales",
+      "template": "film",
+      "category": "BOLLYWOOD BLOCKBUSTER",
+      "headline": "YASH KI 'TOXIC' KA BOX OFFICE TSUNAMI:\nRELEASE SE PEHLE RS. 50 CRORE ADVANCE BOOKING!",
+      "subheadline": "KGF superstar Yash ki upcoming movie ne worldwide ticket sales me racha itihaas. Theatrical release se pehle hi tode pre-sales ke saare records.",
+      "highlighted_fact": "Rs. 50+ Cr Advance Sales | Global Record",
+      "caption": "🎬 Box Office Storm: Yash ki 'Toxic' ne release se pehle hi tod dale records, RS. 50 Crore advance booking paar! 💥🍿\n\nKGF superstar Yash ki agli mega-budget action thriller film 'Toxic: A Fairy Tale for Grown-ups' ne release se pehle hi box office par aag laga di hai! Worldwide advance bookings me film ne RS. 50 Crore ka historic milestone cross kar liya hai. Geetu Mohandas ke direction me ban rahi is high-octane movie ko lekar global audience me jabardast craze dekha ja raha hai. Trade analysts ke mutabik yeh film opening day par Indian cinema ke sabse bade collection records tod sakti hai!\n\nKya Yash ki 'Toxic' KGF Chapter 2 ke opening records ko peeche chhod payegi? Comment karein! 👇💬\n\nSource: <a href=\"https://www.filmibeat.com\">FilmiBeat</a>\n\n#yash #toxicmovie #kgf #boxofficerecords #bollywoodnews",
+      "public_video_url": "https://files.catbox.moe/0zns8y.mp4",
+      "created_at_ist": "2026-08-25 10:45 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 07:46 AM IST",
+      "ig_media_id": "18098299730016305",
+      "published_by": "GitHub Actions Cloud Runner"
+    }
+  ]
 }
