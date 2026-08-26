@@ -1,6 +1,43 @@
 {
   "queue_version": "1.0",
-  "pending_posts": [],
+  "pending_posts": [
+    {
+      "id": "post_1211e3a49e14",
+      "template": "breaking",
+      "category": "DEFENCE BREAKTHROUGH",
+      "headline": "DRDO KA 22,000 FT PAR ITIHAASIK PARACHUTE TEST:\nPRIVATE DEFENCE COMPANIES KO MILI MISSILE TECH!",
+      "subheadline": "DRDO ne 22,000 feet altitude par indigenous combat parachute drop kiya safal. Make in India ko badhava dene ke liye missile technology transfer approved.",
+      "highlighted_fact": "22,000 Ft Drop | Missile Tech Transfer",
+      "caption": "🪂 Indian Defence Milestone: DRDO ne 22,000 feet par kiya Combat Parachute test, Private sector ko mili Missile Tech! 🇮🇳🚀\n\nBharat ke defence sector me aatmanirbharta ki taraf ek bada kadam uthaya gaya hai! Defence Research and Development Organisation (DRDO) ne 22,000 feet ki unchai par indigenous Combat Parachute System ka successful drop test pura kiya. Iske sath hi Raksha Mantralaya ne DRDO ki critical missile technologies ko private Indian defence companies ko transfer karne ki aadhikarik manzoori de di hai. Is faisle se private domestic manufacturers ab hypersonic aur precision missiles produce karke global defence export market me Bharat ka dabdaba badhayenge!\n\nKya Private Defence Companies Bharat ko world's top defence exporter bana payengi? Comment karein! 👇💬\n\nSource: <a href=\"https://indianexpress.com/article/india/india-news-live-26-august-2026-breaking-news-protest-cjp-accident-rain-weather-world-10849764/\">Indian Express</a>\n\n#drdo #indianarmy #makeinindia #defencenews #indianspecialforces",
+      "public_video_url": "https://files.catbox.moe/ppp3ba.mp4",
+      "created_at_ist": "2026-08-26 07:15 PM IST",
+      "status": "PENDING"
+    },
+    {
+      "id": "post_319736933a67",
+      "template": "controversy",
+      "category": "CYBER CRIME ALERT",
+      "headline": "GOA MEIN RS. 400 CRORE KA DIGITAL ARREST BUST:\nED AUR CYBER POLICE NE PHODHA MAFIA NETWORK!",
+      "subheadline": "Goa ke luxury villas se operate ho raha tha international syndicate. Fake CBI aur Police video calls se hazaron logon ko banaya thagi ka shikar.",
+      "highlighted_fact": "Rs. 400 Crore Scam | Digital Arrest Bust",
+      "caption": "🚨 Mega Cyber Bust: Goa me RS. 400 Crore ke 'Digital Arrest' scam ka parda-faash, luxury villas se chal raha tha syndicate! 💻⚖️\n\nEnforcement Directorate (ED) aur cyber crime cell ne desh ke sabse bade 'Digital Arrest' cyber mafia network ko dhar dabocha hai! Goa ke private luxury villas se operate ho rahe is international gang ne fake CBI, Police aur Supreme Court ke video calls setup karke aam nagrikon aur senior citizens se lagbhag RS. 400 Crore loot liye the. Raids ke dauran darjanon high-tech laptops, fake ID cards, aur hawala transaction records baramad kiye gaye hain. Sarkaar ne public advisories jari karte hue saaf kiya hai ki kanoon me 'Digital Arrest' jaisa koi provision nahi hota!\n\nKya aapko bhi kabhi aisi fake police ya courier warning call aayi hai? Satark rahein aur comment me batayein! 👇💬\n\nSource: <a href=\"https://www.indiatoday.in\">India Today</a>\n\n#digitalarrest #cybercrime #edraid #scamalert #fraudnews",
+      "public_video_url": "https://files.catbox.moe/mzyq4r.mp4",
+      "created_at_ist": "2026-08-26 07:15 PM IST",
+      "status": "PENDING"
+    },
+    {
+      "id": "post_d07648e39d8b",
+      "template": "politics",
+      "category": "NATIONAL DIPLOMACY",
+      "headline": "MEA NE UN RACIAL REPORT KO KIYA KHARIZ:\n'POLITICALLY MOTIVATED AUR FACTUALLY WRONG' KARAAR!",
+      "subheadline": "Videsh Mantralaya ne Geneva me aayojit UNCERD report par lagayi kadi fatkar. Bharat ke democratic framework aur barabari ke adhikar ko dohraya.",
+      "highlighted_fact": "MEA Official Response | UNCERD Geneva",
+      "caption": "🇮🇳 Strong Diplomatic Stand: Bharat ne UNCERD ki report ko khariz kiya, 'Politically Motivated' aur galat bataya! 🌐⚡\n\nVidesh Mantralaya (MEA) ne United Nations Committee on the Elimination of Racial Discrimination (UNCERD) ki taaza remarks par kadi aapti jatate hue use poori tarah se 'politically motivated aur malicious' karaar diya hai! MEA spokesperson ne spasht kiya ki Bharat ka sanvidhan sabhi nagrikon ko bina kisi bhedbhav ke barabari aur suraksha ka adhikar deta hai. Global forums par agenda-driven accusations ko Bharat ne kade shabdon me reject karte hue apni democratic values aur pluralistic culture ko highlight kiya hai!\n\nInternational forums par Bharat ke is strong aur clear stand par aapki kya rai hai? Comment karein! 👇💬\n\nSource: <a href=\"https://www.thehindu.com/news/national/india-rejects-politically-motivated-highly-malicious-references-in-remarks-by-uncerd/article71392232.ece\">The Hindu</a>\n\n#mea #indianforeignpolicy #unitednations #geopolitics #indiadiplomacy",
+      "public_video_url": "https://files.catbox.moe/wcz4v3.mp4",
+      "created_at_ist": "2026-08-26 07:15 PM IST",
+      "status": "PENDING"
+    }
+  ],
   "published_posts": [
     {
       "id": "post_yash_toxic_advance_sales",
