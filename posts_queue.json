@@ -2,18 +2,6 @@
   "queue_version": "1.0",
   "pending_posts": [
     {
-      "id": "post_319736933a67",
-      "template": "controversy",
-      "category": "CYBER CRIME ALERT",
-      "headline": "GOA MEIN RS. 400 CRORE KA DIGITAL ARREST BUST:\nED AUR CYBER POLICE NE PHODHA MAFIA NETWORK!",
-      "subheadline": "Goa ke luxury villas se operate ho raha tha international syndicate. Fake CBI aur Police video calls se hazaron logon ko banaya thagi ka shikar.",
-      "highlighted_fact": "Rs. 400 Crore Scam | Digital Arrest Bust",
-      "caption": "🚨 Mega Cyber Bust: Goa me RS. 400 Crore ke 'Digital Arrest' scam ka parda-faash, luxury villas se chal raha tha syndicate! 💻⚖️\n\nEnforcement Directorate (ED) aur cyber crime cell ne desh ke sabse bade 'Digital Arrest' cyber mafia network ko dhar dabocha hai! Goa ke private luxury villas se operate ho rahe is international gang ne fake CBI, Police aur Supreme Court ke video calls setup karke aam nagrikon aur senior citizens se lagbhag RS. 400 Crore loot liye the. Raids ke dauran darjanon high-tech laptops, fake ID cards, aur hawala transaction records baramad kiye gaye hain. Sarkaar ne public advisories jari karte hue saaf kiya hai ki kanoon me 'Digital Arrest' jaisa koi provision nahi hota!\n\nKya aapko bhi kabhi aisi fake police ya courier warning call aayi hai? Satark rahein aur comment me batayein! 👇💬\n\nSource: <a href=\"https://www.indiatoday.in\">India Today</a>\n\n#digitalarrest #cybercrime #edraid #scamalert #fraudnews",
-      "public_video_url": "https://files.catbox.moe/mzyq4r.mp4",
-      "created_at_ist": "2026-08-26 07:15 PM IST",
-      "status": "PENDING"
-    },
-    {
       "id": "post_d07648e39d8b",
       "template": "politics",
       "category": "NATIONAL DIPLOMACY",
@@ -130,6 +118,21 @@
       "status": "PUBLISHED",
       "published_at_ist": "2026-08-26 07:20 PM IST",
       "ig_media_id": "18112831412070677",
+      "published_by": "GitHub Actions Cloud Runner"
+    },
+    {
+      "id": "post_319736933a67",
+      "template": "controversy",
+      "category": "CYBER CRIME ALERT",
+      "headline": "GOA MEIN RS. 400 CRORE KA DIGITAL ARREST BUST:\nED AUR CYBER POLICE NE PHODHA MAFIA NETWORK!",
+      "subheadline": "Goa ke luxury villas se operate ho raha tha international syndicate. Fake CBI aur Police video calls se hazaron logon ko banaya thagi ka shikar.",
+      "highlighted_fact": "Rs. 400 Crore Scam | Digital Arrest Bust",
+      "caption": "🚨 Mega Cyber Bust: Goa me RS. 400 Crore ke 'Digital Arrest' scam ka parda-faash, luxury villas se chal raha tha syndicate! 💻⚖️\n\nEnforcement Directorate (ED) aur cyber crime cell ne desh ke sabse bade 'Digital Arrest' cyber mafia network ko dhar dabocha hai! Goa ke private luxury villas se operate ho rahe is international gang ne fake CBI, Police aur Supreme Court ke video calls setup karke aam nagrikon aur senior citizens se lagbhag RS. 400 Crore loot liye the. Raids ke dauran darjanon high-tech laptops, fake ID cards, aur hawala transaction records baramad kiye gaye hain. Sarkaar ne public advisories jari karte hue saaf kiya hai ki kanoon me 'Digital Arrest' jaisa koi provision nahi hota!\n\nKya aapko bhi kabhi aisi fake police ya courier warning call aayi hai? Satark rahein aur comment me batayein! 👇💬\n\nSource: <a href=\"https://www.indiatoday.in\">India Today</a>\n\n#digitalarrest #cybercrime #edraid #scamalert #fraudnews",
+      "public_video_url": "https://files.catbox.moe/mzyq4r.mp4",
+      "created_at_ist": "2026-08-26 07:15 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 09:24 PM IST",
+      "ig_media_id": "18030194477667575",
       "published_by": "GitHub Actions Cloud Runner"
     }
   ]
