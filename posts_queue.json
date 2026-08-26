@@ -2,18 +2,6 @@
   "queue_version": "1.0",
   "pending_posts": [
     {
-      "id": "post_0aad9875ecda",
-      "template": "breaking",
-      "category": "MARKET & COMMODITY",
-      "headline": "CRUDE OIL MEIN 3% KI BADI GIRAAVAT:\nRUPEE 26 PAISE MAZBOOT, SENSEX 286 PTS UCHHLA!",
-      "subheadline": "Brent crude $89 ke neeche fisla. Global crude cooling aur Dollar index weak hone se Indian Rupee 95.44 par band, markets me aayi raahat.",
-      "highlighted_fact": "Brent Crude Below $90 | Sensex +286 Pts",
-      "caption": "📈 Market Relief: Crude Oil $89 ke neeche fisla, Rupee 26 paise mazboot aur Sensex me 286 points ki tezi! 🛢️🇮🇳\n\nGlobal energy markets me aayi thandak ka direct fayda Indian economy aur stock market ko mila hai! US-Iran geopolitical tanav me thodi kami aane ke baad Brent crude 3% se zyada girkar $89.32/barrel par aa gaya. Iske chalte Indian Rupee US Dollar ke mukable 26 paise mazboot hokar 95.44 par close hua. Domestic stock market me zabardast buying dekhi gayi aur Sensex 286 points chadhkar 77,656 par settle hua!\n\nKya crude oil ki giraavat se Indian stock market me naya all-time high dekhne ko milega? Comment karein! 👇💬\n\nSource: <a href=\"https://www.thehindu.com\">The Hindu Business</a>\n\n#stockmarket #sensex #crudeoil #indianrupee #marketupdate",
-      "public_video_url": "https://files.catbox.moe/541u8b.mp4",
-      "created_at_ist": "2026-08-25 11:28 PM IST",
-      "status": "PENDING"
-    },
-    {
       "id": "post_9b3e4e8f8467",
       "template": "politics",
       "category": "MACRO ECONOMY",
@@ -85,6 +73,21 @@
       "status": "PUBLISHED",
       "published_at_ist": "2026-08-26 12:52 PM IST",
       "ig_media_id": "18182179003416638",
+      "published_by": "GitHub Actions Cloud Runner"
+    },
+    {
+      "id": "post_0aad9875ecda",
+      "template": "breaking",
+      "category": "MARKET & COMMODITY",
+      "headline": "CRUDE OIL MEIN 3% KI BADI GIRAAVAT:\nRUPEE 26 PAISE MAZBOOT, SENSEX 286 PTS UCHHLA!",
+      "subheadline": "Brent crude $89 ke neeche fisla. Global crude cooling aur Dollar index weak hone se Indian Rupee 95.44 par band, markets me aayi raahat.",
+      "highlighted_fact": "Brent Crude Below $90 | Sensex +286 Pts",
+      "caption": "📈 Market Relief: Crude Oil $89 ke neeche fisla, Rupee 26 paise mazboot aur Sensex me 286 points ki tezi! 🛢️🇮🇳\n\nGlobal energy markets me aayi thandak ka direct fayda Indian economy aur stock market ko mila hai! US-Iran geopolitical tanav me thodi kami aane ke baad Brent crude 3% se zyada girkar $89.32/barrel par aa gaya. Iske chalte Indian Rupee US Dollar ke mukable 26 paise mazboot hokar 95.44 par close hua. Domestic stock market me zabardast buying dekhi gayi aur Sensex 286 points chadhkar 77,656 par settle hua!\n\nKya crude oil ki giraavat se Indian stock market me naya all-time high dekhne ko milega? Comment karein! 👇💬\n\nSource: <a href=\"https://www.thehindu.com\">The Hindu Business</a>\n\n#stockmarket #sensex #crudeoil #indianrupee #marketupdate",
+      "public_video_url": "https://files.catbox.moe/541u8b.mp4",
+      "created_at_ist": "2026-08-25 11:28 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 01:30 PM IST",
+      "ig_media_id": "17967156342150519",
       "published_by": "GitHub Actions Cloud Runner"
     }
   ]
