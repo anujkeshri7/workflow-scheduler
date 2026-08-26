@@ -1,6 +1,7 @@
 {
   "queue_version": "1.0",
-  "pending_posts": [
+  "pending_posts": [],
+  "published_posts": [
     {
       "id": "post_yash_toxic_advance_sales",
       "template": "film",
@@ -11,7 +12,10 @@
       "caption": "🎬 Box Office Storm: Yash ki 'Toxic' ne release se pehle hi tod dale records, RS. 50 Crore advance booking paar! 💥🍿\n\nKGF superstar Yash ki agli mega-budget action thriller film 'Toxic: A Fairy Tale for Grown-ups' ne release se pehle hi box office par aag laga di hai! Worldwide advance bookings me film ne RS. 50 Crore ka historic milestone cross kar liya hai. Geetu Mohandas ke direction me ban rahi is high-octane movie ko lekar global audience me jabardast craze dekha ja raha hai. Trade analysts ke mutabik yeh film opening day par Indian cinema ke sabse bade collection records tod sakti hai!\n\nKya Yash ki 'Toxic' KGF Chapter 2 ke opening records ko peeche chhod payegi? Comment karein! 👇💬\n\nSource: <a href=\"https://www.filmibeat.com\">FilmiBeat</a>\n\n#yash #toxicmovie #kgf #boxofficerecords #bollywoodnews",
       "public_video_url": "https://files.catbox.moe/0zns8y.mp4",
       "created_at_ist": "2026-08-25 10:45 PM IST",
-      "status": "PENDING"
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 07:46 AM IST",
+      "ig_media_id": "18098299730016305",
+      "published_by": "GitHub Actions Cloud Runner"
     },
     {
       "id": "post_apple_m6_m5_ultra_unveil",
@@ -23,7 +27,10 @@
       "caption": "⚡ Tech Giant Move: Apple ne M6 aur M5 Ultra chips ke sath unveil kiya futuristic Mac Mini & Studio! 🖥️🚀\n\nApple ne global tech market me naya tehelka machate hue apne next-generation silicon chips M6 aur M5 Ultra launch kar diye hain! Naye compact Mac Mini aur heavy-duty Mac Studio me ab tak ka sabse powerful Neural Engine diya gaya hai, jo complex AI models aur local intelligence workflows ko bina internet cloud ke 3.5 guna tezi se execute karega. Creative professionals aur developers ke liye yeh hardware computing ka ek naya milestone mana ja raha hai!\n\nKya aap apne workflows ke liye Apple ke naye M6 AI chips me upgrade karenge? Comment karein! 👇💬\n\nSource: <a href=\"https://www.apple.com/newsroom\">Apple Newsroom</a>\n\n#apple #macmini #m6chip #artificialintelligence #technews",
       "public_video_url": "https://files.catbox.moe/p7anbi.mp4",
       "created_at_ist": "2026-08-25 10:45 PM IST",
-      "status": "PENDING"
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 08:21 AM IST",
+      "ig_media_id": "18126758290810429",
+      "published_by": "GitHub Actions Cloud Runner"
     },
     {
       "id": "post_india_china_beijing_summit",
@@ -35,7 +42,10 @@
       "caption": "🤝 Geopolitical Breakthrough: Beijing me Ajit Doval aur Wang Yi ke beech 25th round border talks safal! 🇮🇳🇨🇳\n\nBharat aur China ke rishton me ek naya aur sakaratmak mod dekhne ko mila hai! Beijing me aayojit 25th Special Representatives meeting me National Security Advisor Ajit Doval aur Chinese Foreign Minister Wang Yi ne LAC par shanti aur border disengagement par detailed charcha ki. Dono deshon ne aadhikarik bayaan jari karte hue kaha ki bilateral rishte 'steadily normalcy ki taraf badh rahe hain'. Aane wale BRICS Summit se pehle is baithak ko diplomatic dhang se behad ahem mana ja raha hai!\n\nKya Bharat aur China ke border vivad ka sthayi hal nikal sakta hai? Apni rai comment karein! 👇💬\n\nSource: <a href=\"https://www.thehindu.com\">The Hindu</a>\n\n#indiachina #ajitdoval #geopolitics #brics2026 #breakingnews",
       "public_video_url": "https://files.catbox.moe/k5lgtc.mp4",
       "created_at_ist": "2026-08-25 10:45 PM IST",
-      "status": "PENDING"
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 09:01 AM IST",
+      "ig_media_id": "18619965232058351",
+      "published_by": "GitHub Actions Cloud Runner"
     },
     {
       "id": "post_ba06b4850aba",
@@ -47,7 +57,10 @@
       "caption": "🚗 Mega Tech Deal: TCS aur Porsche AG ke beech hua RS. 11,500 Crore (€1.25B) ka historic AI partnership! 🇮🇳🇩🇪\n\nTata Consultancy Services (TCS) ne European automotive market me ab tak ka sabse bada dhamaka kar diya hai! TCS ne luxury sports car maker Porsche AG ke sath 5-saal ka €1.25 Billion (lagbhag RS. 11,500 Crore) ka strategic pact sign kiya hai. Iske sath hi TCS Porsche ki digital consulting subsidiary MHP ko €320 Million (RS. 3,575 Crore) me acquire karegi. Dono companiyan milkar next-generation AI Mobility Centre of Excellence banayengi jo automated driving aur digital manufacturing ko naye levels par le jayega!\n\nKya Tata TCS ka yeh acquisition Indian IT sector ke liye game-changer साबित hoga? Comment karein! 👇💬\n\nSource: <a href=\"https://indianexpress.com/article/business/tcs-acquires-porsche-it-arm-rs-3575-crore-five-year-deal-10847702/\">Indian Express</a>\n\n#tcs #porsche #tatagroup #aimobility #businessnews",
       "public_video_url": "https://files.catbox.moe/kgepdq.mp4",
       "created_at_ist": "2026-08-25 11:28 PM IST",
-      "status": "PENDING"
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 12:52 PM IST",
+      "ig_media_id": "18182179003416638",
+      "published_by": "GitHub Actions Cloud Runner"
     },
     {
       "id": "post_0aad9875ecda",
@@ -59,7 +72,10 @@
       "caption": "📈 Market Relief: Crude Oil $89 ke neeche fisla, Rupee 26 paise mazboot aur Sensex me 286 points ki tezi! 🛢️🇮🇳\n\nGlobal energy markets me aayi thandak ka direct fayda Indian economy aur stock market ko mila hai! US-Iran geopolitical tanav me thodi kami aane ke baad Brent crude 3% se zyada girkar $89.32/barrel par aa gaya. Iske chalte Indian Rupee US Dollar ke mukable 26 paise mazboot hokar 95.44 par close hua. Domestic stock market me zabardast buying dekhi gayi aur Sensex 286 points chadhkar 77,656 par settle hua!\n\nKya crude oil ki giraavat se Indian stock market me naya all-time high dekhne ko milega? Comment karein! 👇💬\n\nSource: <a href=\"https://www.thehindu.com\">The Hindu Business</a>\n\n#stockmarket #sensex #crudeoil #indianrupee #marketupdate",
       "public_video_url": "https://files.catbox.moe/541u8b.mp4",
       "created_at_ist": "2026-08-25 11:28 PM IST",
-      "status": "PENDING"
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 01:30 PM IST",
+      "ig_media_id": "17967156342150519",
+      "published_by": "GitHub Actions Cloud Runner"
     },
     {
       "id": "post_9b3e4e8f8467",
@@ -71,44 +87,10 @@
       "caption": "🏦 Economic Powerhouse: RBI August Bulletin me Bharat ko bataya 'Global Bright Spot', 7.6% GDP growth maintain! 🇮🇳📊\n\nReserve Bank of India (RBI) ke taaza August 2026 Bulletin me Indian economy ki mazbooti par muhar lagayi gayi hai! RBI ke mutabik global geopolitical headwinds aur trade restrictions ke bawajood Bharat 7.6% real GDP growth ke sath duniya ki sabse tezi se badhti major economy bana hua hai. Strong domestic consumer demand, robust manufacturing output aur behtar monsoon ke chalte agricultural recovery ne economy ko solid cushion diya hai!\n\nKya Bharat 2030 tak duniya ki 3rd sabse badi economy ban jayega? Apni rai comment karein! 👇💬\n\nSource: <a href=\"https://www.rbi.org.in\">RBI Official</a>\n\n#rbi #indiangdp #economy #indianeconomy #financenews",
       "public_video_url": "https://files.catbox.moe/3bskwj.mp4",
       "created_at_ist": "2026-08-25 11:28 PM IST",
-      "status": "PENDING"
-    },
-    {
-      "id": "post_1211e3a49e14",
-      "template": "breaking",
-      "category": "DEFENCE BREAKTHROUGH",
-      "headline": "DRDO KA 22,000 FT PAR ITIHAASIK PARACHUTE TEST:\nPRIVATE DEFENCE COMPANIES KO MILI MISSILE TECH!",
-      "subheadline": "DRDO ne 22,000 feet altitude par indigenous combat parachute drop kiya safal. Make in India ko badhava dene ke liye missile technology transfer approved.",
-      "highlighted_fact": "22,000 Ft Drop | Missile Tech Transfer",
-      "caption": "🪂 Indian Defence Milestone: DRDO ne 22,000 feet par kiya Combat Parachute test, Private sector ko mili Missile Tech! 🇮🇳🚀\n\nBharat ke defence sector me aatmanirbharta ki taraf ek bada kadam uthaya gaya hai! Defence Research and Development Organisation (DRDO) ne 22,000 feet ki unchai par indigenous Combat Parachute System ka successful drop test pura kiya. Iske sath hi Raksha Mantralaya ne DRDO ki critical missile technologies ko private Indian defence companies ko transfer karne ki aadhikarik manzoori de di hai. Is faisle se private domestic manufacturers ab hypersonic aur precision missiles produce karke global defence export market me Bharat ka dabdaba badhayenge!\n\nKya Private Defence Companies Bharat ko world's top defence exporter bana payengi? Comment karein! 👇💬\n\nSource: <a href=\"https://indianexpress.com/article/india/india-news-live-26-august-2026-breaking-news-protest-cjp-accident-rain-weather-world-10849764/\">Indian Express</a>\n\n#drdo #indianarmy #makeinindia #defencenews #indianspecialforces",
-      "public_video_url": "https://files.catbox.moe/ppp3ba.mp4",
-      "created_at_ist": "2026-08-26 06:53 PM IST",
-      "status": "PENDING"
-    },
-    {
-      "id": "post_319736933a67",
-      "template": "controversy",
-      "category": "CYBER CRIME ALERT",
-      "headline": "GOA MEIN RS. 400 CRORE KA DIGITAL ARREST BUST:\nED AUR CYBER POLICE NE PHODHA MAFIA NETWORK!",
-      "subheadline": "Goa ke luxury villas se operate ho raha tha international syndicate. Fake CBI aur Police video calls se hazaron logon ko banaya thagi ka shikar.",
-      "highlighted_fact": "Rs. 400 Crore Scam | Digital Arrest Bust",
-      "caption": "🚨 Mega Cyber Bust: Goa me RS. 400 Crore ke 'Digital Arrest' scam ka parda-faash, luxury villas se chal raha tha syndicate! 💻⚖️\n\nEnforcement Directorate (ED) aur cyber crime cell ne desh ke sabse bade 'Digital Arrest' cyber mafia network ko dhar dabocha hai! Goa ke private luxury villas se operate ho rahe is international gang ne fake CBI, Police aur Supreme Court ke video calls setup karke aam nagrikon aur senior citizens se lagbhag RS. 400 Crore loot liye the. Raids ke dauran darjanon high-tech laptops, fake ID cards, aur hawala transaction records baramad kiye gaye hain. Sarkaar ne public advisories jari karte hue saaf kiya hai ki kanoon me 'Digital Arrest' jaisa koi provision nahi hota!\n\nKya aapko bhi kabhi aisi fake police ya courier warning call aayi hai? Satark rahein aur comment me batayein! 👇💬\n\nSource: <a href=\"https://www.indiatoday.in\">India Today</a>\n\n#digitalarrest #cybercrime #edraid #scamalert #fraudnews",
-      "public_video_url": "https://files.catbox.moe/mzyq4r.mp4",
-      "created_at_ist": "2026-08-26 06:53 PM IST",
-      "status": "PENDING"
-    },
-    {
-      "id": "post_d07648e39d8b",
-      "template": "politics",
-      "category": "NATIONAL DIPLOMACY",
-      "headline": "MEA NE UN RACIAL REPORT KO KIYA KHARIZ:\n'POLITICALLY MOTIVATED AUR FACTUALLY WRONG' KARAAR!",
-      "subheadline": "Videsh Mantralaya ne Geneva me aayojit UNCERD report par lagayi kadi fatkar. Bharat ke democratic framework aur barabari ke adhikar ko dohraya.",
-      "highlighted_fact": "MEA Official Response | UNCERD Geneva",
-      "caption": "🇮🇳 Strong Diplomatic Stand: Bharat ne UNCERD ki report ko khariz kiya, 'Politically Motivated' aur galat bataya! 🌐⚡\n\nVidesh Mantralaya (MEA) ne United Nations Committee on the Elimination of Racial Discrimination (UNCERD) ki taaza remarks par kadi aapti jatate hue use poori tarah se 'politically motivated aur malicious' karaar diya hai! MEA spokesperson ne spasht kiya ki Bharat ka sanvidhan sabhi nagrikon ko bina kisi bhedbhav ke barabari aur suraksha ka adhikar deta hai. Global forums par agenda-driven accusations ko Bharat ne kade shabdon me reject karte hue apni democratic values aur pluralistic culture ko highlight kiya hai!\n\nInternational forums par Bharat ke is strong aur clear stand par aapki kya rai hai? Comment karein! 👇💬\n\nSource: <a href=\"https://www.thehindu.com/news/national/india-rejects-politically-motivated-highly-malicious-references-in-remarks-by-uncerd/article71392232.ece\">The Hindu</a>\n\n#mea #indianforeignpolicy #unitednations #geopolitics #indiadiplomacy",
-      "public_video_url": "https://files.catbox.moe/wcz4v3.mp4",
-      "created_at_ist": "2026-08-26 06:53 PM IST",
-      "status": "PENDING"
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 02:24 PM IST",
+      "ig_media_id": "18071174795541314",
+      "published_by": "GitHub Actions Cloud Runner"
     }
-  ],
-  "published_posts": []
+  ]
 }
