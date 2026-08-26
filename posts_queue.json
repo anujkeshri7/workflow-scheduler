@@ -2,18 +2,6 @@
   "queue_version": "1.0",
   "pending_posts": [
     {
-      "id": "post_apple_m6_m5_ultra_unveil",
-      "template": "breaking",
-      "category": "TECH & AI REVOLUTION",
-      "headline": "APPLE KA NEXT-GEN AI DHAMAKA:\nM6 AUR M5 ULTRA CHIPS KE SATH MAC UNVEIL!",
-      "subheadline": "Apple ne launch kiya redesigned Mac Mini aur powerhouse Mac Studio. On-device local AI processing aur Neural Engine me mili 3.5x speed boost.",
-      "highlighted_fact": "Apple M6 & M5 Ultra | 3.5x AI Speed",
-      "caption": "⚡ Tech Giant Move: Apple ne M6 aur M5 Ultra chips ke sath unveil kiya futuristic Mac Mini & Studio! 🖥️🚀\n\nApple ne global tech market me naya tehelka machate hue apne next-generation silicon chips M6 aur M5 Ultra launch kar diye hain! Naye compact Mac Mini aur heavy-duty Mac Studio me ab tak ka sabse powerful Neural Engine diya gaya hai, jo complex AI models aur local intelligence workflows ko bina internet cloud ke 3.5 guna tezi se execute karega. Creative professionals aur developers ke liye yeh hardware computing ka ek naya milestone mana ja raha hai!\n\nKya aap apne workflows ke liye Apple ke naye M6 AI chips me upgrade karenge? Comment karein! 👇💬\n\nSource: <a href=\"https://www.apple.com/newsroom\">Apple Newsroom</a>\n\n#apple #macmini #m6chip #artificialintelligence #technews",
-      "public_video_url": "https://files.catbox.moe/p7anbi.mp4",
-      "created_at_ist": "2026-08-25 10:45 PM IST",
-      "status": "PENDING"
-    },
-    {
       "id": "post_india_china_beijing_summit",
       "template": "politics",
       "category": "GLOBAL DIPLOMACY",
@@ -76,6 +64,21 @@
       "status": "PUBLISHED",
       "published_at_ist": "2026-08-26 07:46 AM IST",
       "ig_media_id": "18098299730016305",
+      "published_by": "GitHub Actions Cloud Runner"
+    },
+    {
+      "id": "post_apple_m6_m5_ultra_unveil",
+      "template": "breaking",
+      "category": "TECH & AI REVOLUTION",
+      "headline": "APPLE KA NEXT-GEN AI DHAMAKA:\nM6 AUR M5 ULTRA CHIPS KE SATH MAC UNVEIL!",
+      "subheadline": "Apple ne launch kiya redesigned Mac Mini aur powerhouse Mac Studio. On-device local AI processing aur Neural Engine me mili 3.5x speed boost.",
+      "highlighted_fact": "Apple M6 & M5 Ultra | 3.5x AI Speed",
+      "caption": "⚡ Tech Giant Move: Apple ne M6 aur M5 Ultra chips ke sath unveil kiya futuristic Mac Mini & Studio! 🖥️🚀\n\nApple ne global tech market me naya tehelka machate hue apne next-generation silicon chips M6 aur M5 Ultra launch kar diye hain! Naye compact Mac Mini aur heavy-duty Mac Studio me ab tak ka sabse powerful Neural Engine diya gaya hai, jo complex AI models aur local intelligence workflows ko bina internet cloud ke 3.5 guna tezi se execute karega. Creative professionals aur developers ke liye yeh hardware computing ka ek naya milestone mana ja raha hai!\n\nKya aap apne workflows ke liye Apple ke naye M6 AI chips me upgrade karenge? Comment karein! 👇💬\n\nSource: <a href=\"https://www.apple.com/newsroom\">Apple Newsroom</a>\n\n#apple #macmini #m6chip #artificialintelligence #technews",
+      "public_video_url": "https://files.catbox.moe/p7anbi.mp4",
+      "created_at_ist": "2026-08-25 10:45 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 08:21 AM IST",
+      "ig_media_id": "18126758290810429",
       "published_by": "GitHub Actions Cloud Runner"
     }
   ]
