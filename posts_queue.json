@@ -1,6 +1,43 @@
 {
   "queue_version": "1.0",
-  "pending_posts": [],
+  "pending_posts": [
+    {
+      "id": "post_7318013323e1",
+      "template": "politics",
+      "category": "INDIAN CINEMA WEALTH",
+      "headline": "INDIAN ACTORS KI FEES MEIN HISTORIC RECORD:\nSRK, VIJAY AUR RANVEER LE RAHE RS. 250-325 CR!",
+      "subheadline": "Shah Rukh Khan ₹150-300 Cr fees ke sath top par. Thalapathy Vijay ne ₹275 Cr aur Ranveer Singh ne profit sharing se ₹325 Cr kamaye.",
+      "highlighted_fact": "Rs. 250-325 Cr Per Film | Highest Paid",
+      "caption": "🎬 Mega Stardom Wealth: Indian cinema me superstar fees ne tode records, SRK aur Vijay le rahe RS. 250-325 Crore per movie! 💰💥\n\nIndian film industry me superstars ki remuneration ne Hollywood ke level ko chhu liya hai! Industry ke taaza reports ke mutabik Shah Rukh Khan ₹150 se ₹300 Crore per movie charge karke desh ke sabse mehnge actor bane hue hain. Wahi Thalapathy Vijay ne apni final film 'Jana Nayagan' ke liye lagbhag ₹275 Crore ki historic fees li hai. Dusri taraf profit-sharing model ke chalte Ranveer Singh ne ek single project se lagbhag ₹325 Crore kamaye hain. Box office collections ke sath backend profit participation ab Indian superstars ka naya standard ban chuka hai!\n\nKya aapko lagta hai ek film ke liye RS. 250+ Crore fees justify hoti hai? Comment karein! 👇💬\n\nSource: <a href=\"https://www.fincash.com\">FinCash Industry Report</a>\n\n#shahrukhkhan #thalapathyvijay #ranveersingh #bollywoodwealth #celebrityincome",
+      "public_video_url": "https://files.catbox.moe/kwtjkj.mp4",
+      "created_at_ist": "2026-08-26 09:44 PM IST",
+      "status": "PENDING"
+    },
+    {
+      "id": "post_748a52a3dd7a",
+      "template": "breaking",
+      "category": "CREATOR ECONOMY",
+      "headline": "DESH KE SABSE AMEER YOUTUBERS KA DHAMAKA:\nTECHNICAL GURUJI RS. 356 CR, BHUVAN RS. 143 CR!",
+      "subheadline": "Creator economy bani multi-thousand crore industry. CarryMinati ₹130 Cr net worth ke sath top tier me, per deal charge karte hain ₹30 Lakh.",
+      "highlighted_fact": "Technical Guruji Rs. 356 Cr | Bhuvan Rs. 143 Cr",
+      "caption": "🚀 Digital Creator Empire: Desh ke top YouTubers ki net worth dekh dang reh jayenge, Technical Guruji ₹356 Cr aur Bhuvan Bam ₹143 Cr ke malik! 📱💵\n\nBharat ki creator economy ne business world me naya itihaas rach diya hai! Taaza net worth rankings ke mutabik Gaurav Chaudhary (Technical Guruji) ₹356 Crore ki net worth ke sath desh ke sabse ameer YouTuber ban chuke hain. Wahi Bhuvan Bam (BB Ki Vines) ₹143 Crore aur CarryMinati (Ajey Nagar) ₹130 Crore net worth ke sath top creators ki list me shamil hain. YouTube ad revenue ke sath-sath brand sponsorships, equity investments aur independent businesses in creators ke main revenue engines ban chuke hain!\n\nAapka all-time favorite Indian content creator kaun hai? Comment karke batayein! 👇💬\n\nSource: <a href=\"https://www.forbesindia.com\">Forbes India</a>\n\n#technicalguruji #bhuvanbam #carryminati #creatoreconomy #youtubemoney",
+      "public_video_url": "https://files.catbox.moe/985hrw.mp4",
+      "created_at_ist": "2026-08-26 09:44 PM IST",
+      "status": "PENDING"
+    },
+    {
+      "id": "post_47fe09aeb2a0",
+      "template": "politics",
+      "category": "BOLLYWOOD HEROINES",
+      "headline": "BOLLYWOOD ACTRESSES KI RECORD FEES:\nDEEPIKA AUR ALIA BHATT CHARGE KAR RAHI RS. 20-30 CR!",
+      "subheadline": "Indian cinema me female leads ne toda pay disparity barrier. Theatrical fee ke alawa OTT streaming rights aur brand royalties se bani multi-crore wealth.",
+      "highlighted_fact": "Rs. 20-30 Cr Per Project | Top Actresses",
+      "caption": "✨ Powerhouse Actresses: Deepika Padukone aur Alia Bhatt ne tode records, le rahi hain RS. 20-30 Crore per film! 👑💎\n\nIndian cinema me female superstars ne apna dabdaba kayam karte hue naye earning benchmarks set kar diye hain! Deepika Padukone aur Alia Bhatt Bollywood ki sabse highest-paid actresses ban chuki hain jo har project ke liye ₹20 se ₹30 Crore tak charge kar rahi hain. Filmo ke alawa OTT rights, international brand ambassadorships aur apne D2C beauty brands (82°E aur Ed-a-Mamma) ke zariye dono actresses ne 500+ Crore ka business empire khada kar liya hai!\n\nDeepika ya Alia — box office par kiska craze sabse zyada hai? Comment karein! 👇💬\n\nSource: <a href=\"https://www.pinkvilla.com\">Pinkvilla Entertainment</a>\n\n#deepikapadukone #aliabhatt #bollywoodactress #highestpaid #womeninpower",
+      "public_video_url": "https://files.catbox.moe/r38ju0.mp4",
+      "created_at_ist": "2026-08-26 09:44 PM IST",
+      "status": "PENDING"
+    }
+  ],
   "published_posts": [
     {
       "id": "post_yash_toxic_advance_sales",
