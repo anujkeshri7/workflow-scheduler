@@ -1,19 +1,6 @@
 {
   "queue_version": "1.0",
-  "pending_posts": [
-    {
-      "id": "post_d07648e39d8b",
-      "template": "politics",
-      "category": "NATIONAL DIPLOMACY",
-      "headline": "MEA NE UN RACIAL REPORT KO KIYA KHARIZ:\n'POLITICALLY MOTIVATED AUR FACTUALLY WRONG' KARAAR!",
-      "subheadline": "Videsh Mantralaya ne Geneva me aayojit UNCERD report par lagayi kadi fatkar. Bharat ke democratic framework aur barabari ke adhikar ko dohraya.",
-      "highlighted_fact": "MEA Official Response | UNCERD Geneva",
-      "caption": "🇮🇳 Strong Diplomatic Stand: Bharat ne UNCERD ki report ko khariz kiya, 'Politically Motivated' aur galat bataya! 🌐⚡\n\nVidesh Mantralaya (MEA) ne United Nations Committee on the Elimination of Racial Discrimination (UNCERD) ki taaza remarks par kadi aapti jatate hue use poori tarah se 'politically motivated aur malicious' karaar diya hai! MEA spokesperson ne spasht kiya ki Bharat ka sanvidhan sabhi nagrikon ko bina kisi bhedbhav ke barabari aur suraksha ka adhikar deta hai. Global forums par agenda-driven accusations ko Bharat ne kade shabdon me reject karte hue apni democratic values aur pluralistic culture ko highlight kiya hai!\n\nInternational forums par Bharat ke is strong aur clear stand par aapki kya rai hai? Comment karein! 👇💬\n\nSource: <a href=\"https://www.thehindu.com/news/national/india-rejects-politically-motivated-highly-malicious-references-in-remarks-by-uncerd/article71392232.ece\">The Hindu</a>\n\n#mea #indianforeignpolicy #unitednations #geopolitics #indiadiplomacy",
-      "public_video_url": "https://files.catbox.moe/wcz4v3.mp4",
-      "created_at_ist": "2026-08-26 07:15 PM IST",
-      "status": "PENDING"
-    }
-  ],
+  "pending_posts": [],
   "published_posts": [
     {
       "id": "post_yash_toxic_advance_sales",
@@ -133,6 +120,21 @@
       "status": "PUBLISHED",
       "published_at_ist": "2026-08-26 09:24 PM IST",
       "ig_media_id": "18030194477667575",
+      "published_by": "GitHub Actions Cloud Runner"
+    },
+    {
+      "id": "post_d07648e39d8b",
+      "template": "politics",
+      "category": "NATIONAL DIPLOMACY",
+      "headline": "MEA NE UN RACIAL REPORT KO KIYA KHARIZ:\n'POLITICALLY MOTIVATED AUR FACTUALLY WRONG' KARAAR!",
+      "subheadline": "Videsh Mantralaya ne Geneva me aayojit UNCERD report par lagayi kadi fatkar. Bharat ke democratic framework aur barabari ke adhikar ko dohraya.",
+      "highlighted_fact": "MEA Official Response | UNCERD Geneva",
+      "caption": "🇮🇳 Strong Diplomatic Stand: Bharat ne UNCERD ki report ko khariz kiya, 'Politically Motivated' aur galat bataya! 🌐⚡\n\nVidesh Mantralaya (MEA) ne United Nations Committee on the Elimination of Racial Discrimination (UNCERD) ki taaza remarks par kadi aapti jatate hue use poori tarah se 'politically motivated aur malicious' karaar diya hai! MEA spokesperson ne spasht kiya ki Bharat ka sanvidhan sabhi nagrikon ko bina kisi bhedbhav ke barabari aur suraksha ka adhikar deta hai. Global forums par agenda-driven accusations ko Bharat ne kade shabdon me reject karte hue apni democratic values aur pluralistic culture ko highlight kiya hai!\n\nInternational forums par Bharat ke is strong aur clear stand par aapki kya rai hai? Comment karein! 👇💬\n\nSource: <a href=\"https://www.thehindu.com/news/national/india-rejects-politically-motivated-highly-malicious-references-in-remarks-by-uncerd/article71392232.ece\">The Hindu</a>\n\n#mea #indianforeignpolicy #unitednations #geopolitics #indiadiplomacy",
+      "public_video_url": "https://files.catbox.moe/wcz4v3.mp4",
+      "created_at_ist": "2026-08-26 07:15 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-26 09:34 PM IST",
+      "ig_media_id": "18111674350792167",
       "published_by": "GitHub Actions Cloud Runner"
     }
   ]
