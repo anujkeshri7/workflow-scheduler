@@ -84,7 +84,7 @@ def create_reel_video(image_path, audio_path, output_mp4, duration=8.5):
         "gblur=sigma=32,eq=brightness=-0.25:contrast=0.85[bg];"
         "[0:v]scale=1080:1350[fg];"
         "[bg][fg]overlay=x=(W-w)/2:y=(H-h)/2[v];"
-        "[1:a]afade=t=in:ss=0:d=0.4,afade=t=out:st=" + str(duration - 1.5) + ":d=1.5[a]"
+        "[1:a]afade=t=in:ss=0:d=0.02,afade=t=out:st=" + str(duration - 1.2) + ":d=1.2[a]"
     )
     
     cmd = [
