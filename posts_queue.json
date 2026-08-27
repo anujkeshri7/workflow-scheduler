@@ -2,18 +2,6 @@
   "queue_version": "1.0",
   "pending_posts": [
     {
-      "id": "post_7318013323e1",
-      "template": "politics",
-      "category": "INDIAN CINEMA WEALTH",
-      "headline": "INDIAN ACTORS KI FEES MEIN HISTORIC RECORD:\nSRK, VIJAY AUR RANVEER LE RAHE RS. 250-325 CR!",
-      "subheadline": "Shah Rukh Khan ₹150-300 Cr fees ke sath top par. Thalapathy Vijay ne ₹275 Cr aur Ranveer Singh ne profit sharing se ₹325 Cr kamaye.",
-      "highlighted_fact": "Rs. 250-325 Cr Per Film | Highest Paid",
-      "caption": "🎬 Mega Stardom Wealth: Indian cinema me superstar fees ne tode records, SRK aur Vijay le rahe RS. 250-325 Crore per movie! 💰💥\n\nIndian film industry me superstars ki remuneration ne Hollywood ke level ko chhu liya hai! Industry ke taaza reports ke mutabik Shah Rukh Khan ₹150 se ₹300 Crore per movie charge karke desh ke sabse mehnge actor bane hue hain. Wahi Thalapathy Vijay ne apni final film 'Jana Nayagan' ke liye lagbhag ₹275 Crore ki historic fees li hai. Dusri taraf profit-sharing model ke chalte Ranveer Singh ne ek single project se lagbhag ₹325 Crore kamaye hain. Box office collections ke sath backend profit participation ab Indian superstars ka naya standard ban chuka hai!\n\nKya aapko lagta hai ek film ke liye RS. 250+ Crore fees justify hoti hai? Comment karein! 👇💬\n\nSource: <a href=\"https://www.fincash.com\">FinCash Industry Report</a>\n\n#shahrukhkhan #thalapathyvijay #ranveersingh #bollywoodwealth #celebrityincome",
-      "public_video_url": "https://files.catbox.moe/kwtjkj.mp4",
-      "created_at_ist": "2026-08-26 09:44 PM IST",
-      "status": "PENDING"
-    },
-    {
       "id": "post_748a52a3dd7a",
       "template": "breaking",
       "category": "CREATOR ECONOMY",
@@ -208,6 +196,21 @@
       "status": "PUBLISHED",
       "published_at_ist": "2026-08-26 09:34 PM IST",
       "ig_media_id": "18111674350792167",
+      "published_by": "GitHub Actions Cloud Runner"
+    },
+    {
+      "id": "post_7318013323e1",
+      "template": "politics",
+      "category": "INDIAN CINEMA WEALTH",
+      "headline": "INDIAN ACTORS KI FEES MEIN HISTORIC RECORD:\nSRK, VIJAY AUR RANVEER LE RAHE RS. 250-325 CR!",
+      "subheadline": "Shah Rukh Khan ₹150-300 Cr fees ke sath top par. Thalapathy Vijay ne ₹275 Cr aur Ranveer Singh ne profit sharing se ₹325 Cr kamaye.",
+      "highlighted_fact": "Rs. 250-325 Cr Per Film | Highest Paid",
+      "caption": "🎬 Mega Stardom Wealth: Indian cinema me superstar fees ne tode records, SRK aur Vijay le rahe RS. 250-325 Crore per movie! 💰💥\n\nIndian film industry me superstars ki remuneration ne Hollywood ke level ko chhu liya hai! Industry ke taaza reports ke mutabik Shah Rukh Khan ₹150 se ₹300 Crore per movie charge karke desh ke sabse mehnge actor bane hue hain. Wahi Thalapathy Vijay ne apni final film 'Jana Nayagan' ke liye lagbhag ₹275 Crore ki historic fees li hai. Dusri taraf profit-sharing model ke chalte Ranveer Singh ne ek single project se lagbhag ₹325 Crore kamaye hain. Box office collections ke sath backend profit participation ab Indian superstars ka naya standard ban chuka hai!\n\nKya aapko lagta hai ek film ke liye RS. 250+ Crore fees justify hoti hai? Comment karein! 👇💬\n\nSource: <a href=\"https://www.fincash.com\">FinCash Industry Report</a>\n\n#shahrukhkhan #thalapathyvijay #ranveersingh #bollywoodwealth #celebrityincome",
+      "public_video_url": "https://files.catbox.moe/kwtjkj.mp4",
+      "created_at_ist": "2026-08-26 09:44 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-27 11:55 AM IST",
+      "ig_media_id": "18091502249390782",
       "published_by": "GitHub Actions Cloud Runner"
     }
   ]
