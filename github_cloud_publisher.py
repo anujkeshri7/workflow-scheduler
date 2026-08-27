@@ -13,6 +13,9 @@ if sys.stdout.encoding != 'utf-8':
     except Exception:
         pass
 
+from dotenv import load_dotenv
+load_dotenv()
+
 META_TOKEN = os.getenv('META_ACCESS_TOKEN')
 IG_ACCOUNT_ID = os.getenv('IG_ACCOUNT_ID')
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
