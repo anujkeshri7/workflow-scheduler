@@ -2,18 +2,6 @@
   "queue_version": "1.0",
   "pending_posts": [
     {
-      "id": "post_748a52a3dd7a",
-      "template": "breaking",
-      "category": "CREATOR ECONOMY",
-      "headline": "DESH KE SABSE AMEER YOUTUBERS KA DHAMAKA:\nTECHNICAL GURUJI RS. 356 CR, BHUVAN RS. 143 CR!",
-      "subheadline": "Creator economy bani multi-thousand crore industry. CarryMinati ₹130 Cr net worth ke sath top tier me, per deal charge karte hain ₹30 Lakh.",
-      "highlighted_fact": "Technical Guruji Rs. 356 Cr | Bhuvan Rs. 143 Cr",
-      "caption": "🚀 Digital Creator Empire: Desh ke top YouTubers ki net worth dekh dang reh jayenge, Technical Guruji ₹356 Cr aur Bhuvan Bam ₹143 Cr ke malik! 📱💵\n\nBharat ki creator economy ne business world me naya itihaas rach diya hai! Taaza net worth rankings ke mutabik Gaurav Chaudhary (Technical Guruji) ₹356 Crore ki net worth ke sath desh ke sabse ameer YouTuber ban chuke hain. Wahi Bhuvan Bam (BB Ki Vines) ₹143 Crore aur CarryMinati (Ajey Nagar) ₹130 Crore net worth ke sath top creators ki list me shamil hain. YouTube ad revenue ke sath-sath brand sponsorships, equity investments aur independent businesses in creators ke main revenue engines ban chuke hain!\n\nAapka all-time favorite Indian content creator kaun hai? Comment karke batayein! 👇💬\n\nSource: <a href=\"https://www.forbesindia.com\">Forbes India</a>\n\n#technicalguruji #bhuvanbam #carryminati #creatoreconomy #youtubemoney",
-      "public_video_url": "https://files.catbox.moe/985hrw.mp4",
-      "created_at_ist": "2026-08-26 09:44 PM IST",
-      "status": "PENDING"
-    },
-    {
       "id": "post_47fe09aeb2a0",
       "template": "politics",
       "category": "BOLLYWOOD HEROINES",
@@ -247,6 +235,21 @@
       "status": "PUBLISHED",
       "published_at_ist": "2026-08-27 11:55 AM IST",
       "ig_media_id": "18091502249390782",
+      "published_by": "GitHub Actions Cloud Runner"
+    },
+    {
+      "id": "post_748a52a3dd7a",
+      "template": "breaking",
+      "category": "CREATOR ECONOMY",
+      "headline": "DESH KE SABSE AMEER YOUTUBERS KA DHAMAKA:\nTECHNICAL GURUJI RS. 356 CR, BHUVAN RS. 143 CR!",
+      "subheadline": "Creator economy bani multi-thousand crore industry. CarryMinati ₹130 Cr net worth ke sath top tier me, per deal charge karte hain ₹30 Lakh.",
+      "highlighted_fact": "Technical Guruji Rs. 356 Cr | Bhuvan Rs. 143 Cr",
+      "caption": "🚀 Digital Creator Empire: Desh ke top YouTubers ki net worth dekh dang reh jayenge, Technical Guruji ₹356 Cr aur Bhuvan Bam ₹143 Cr ke malik! 📱💵\n\nBharat ki creator economy ne business world me naya itihaas rach diya hai! Taaza net worth rankings ke mutabik Gaurav Chaudhary (Technical Guruji) ₹356 Crore ki net worth ke sath desh ke sabse ameer YouTuber ban chuke hain. Wahi Bhuvan Bam (BB Ki Vines) ₹143 Crore aur CarryMinati (Ajey Nagar) ₹130 Crore net worth ke sath top creators ki list me shamil hain. YouTube ad revenue ke sath-sath brand sponsorships, equity investments aur independent businesses in creators ke main revenue engines ban chuke hain!\n\nAapka all-time favorite Indian content creator kaun hai? Comment karke batayein! 👇💬\n\nSource: <a href=\"https://www.forbesindia.com\">Forbes India</a>\n\n#technicalguruji #bhuvanbam #carryminati #creatoreconomy #youtubemoney",
+      "public_video_url": "https://files.catbox.moe/985hrw.mp4",
+      "created_at_ist": "2026-08-26 09:44 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-27 04:10 PM IST",
+      "ig_media_id": "18327140539263706",
       "published_by": "GitHub Actions Cloud Runner"
     }
   ]
