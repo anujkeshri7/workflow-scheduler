@@ -1,33 +1,14 @@
-name: Instagram Reels 9-Slot Cloud Scheduler
+name: Instagram Reels Autonomous Cloud Scheduler
 
 on:
   schedule:
-    # --- 🌅 MORNING WINDOW (3 SLOTS) ---
-    # Slot 1: 06:30 AM IST = 01:00 UTC
-    - cron: '0 1 * * *'
-    # Slot 2: 07:10 AM IST = 01:40 UTC
-    - cron: '40 1 * * *'
-    # Slot 3: 08:00 AM IST = 02:30 UTC
-    - cron: '30 2 * * *'
-
-    # --- ☀️ AFTERNOON WINDOW (3 SLOTS) ---
-    # Slot 4: 12:00 PM IST = 06:30 UTC
-    - cron: '30 6 * * *'
-    # Slot 5: 12:45 PM IST = 07:15 UTC
-    - cron: '15 7 * * *'
-    # Slot 6: 01:35 PM IST = 08:05 UTC
-    - cron: '5 8 * * *'
-
-    # --- 🌆 EVENING WINDOW (3 SLOTS) ---
-    # Slot 7: 06:30 PM (18:30) IST = 13:00 UTC
-    - cron: '0 13 * * *'
-    # Slot 8: 07:45 PM (19:45) IST = 14:15 UTC
-    - cron: '15 14 * * *'
-    # Slot 9: 08:15 PM (20:15) IST = 14:45 UTC
-    - cron: '45 14 * * *'
-
+    # Runs every 30 minutes to check and publish queued reels with zero drop
+    - cron: '*/30 * * * *'
   workflow_dispatch:
     # Allows manual trigger at any time from GitHub Actions UI
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
 jobs:
   publish-next-queued-reel:
