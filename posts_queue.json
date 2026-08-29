@@ -2,18 +2,6 @@
   "queue_version": "1.0",
   "pending_posts": [
     {
-      "id": "post_47fe09aeb2a0",
-      "template": "politics",
-      "category": "BOLLYWOOD HEROINES",
-      "headline": "BOLLYWOOD ACTRESSES KI RECORD FEES:\nDEEPIKA AUR ALIA BHATT CHARGE KAR RAHI RS. 20-30 CR!",
-      "subheadline": "Indian cinema me female leads ne toda pay disparity barrier. Theatrical fee ke alawa OTT streaming rights aur brand royalties se bani multi-crore wealth.",
-      "highlighted_fact": "Rs. 20-30 Cr Per Project | Top Actresses",
-      "caption": "✨ Powerhouse Actresses: Deepika Padukone aur Alia Bhatt ne tode records, le rahi hain RS. 20-30 Crore per film! 👑💎\n\nIndian cinema me female superstars ne apna dabdaba kayam karte hue naye earning benchmarks set kar diye hain! Deepika Padukone aur Alia Bhatt Bollywood ki sabse highest-paid actresses ban chuki hain jo har project ke liye ₹20 se ₹30 Crore tak charge kar rahi hain. Filmo ke alawa OTT rights, international brand ambassadorships aur apne D2C beauty brands (82°E aur Ed-a-Mamma) ke zariye dono actresses ne 500+ Crore ka business empire khada kar liya hai!\n\nDeepika ya Alia — box office par kiska craze sabse zyada hai? Comment karein! 👇💬\n\nSource: <a href=\"https://www.pinkvilla.com\">Pinkvilla Entertainment</a>\n\n#deepikapadukone #aliabhatt #bollywoodactress #highestpaid #womeninpower",
-      "public_video_url": "https://files.catbox.moe/r38ju0.mp4",
-      "created_at_ist": "2026-08-26 09:44 PM IST",
-      "status": "PENDING"
-    },
-    {
       "id": "post_364c07d1e122",
       "template": "politics",
       "category": "MENTAL HEALTH CRISIS",
@@ -286,6 +274,21 @@
       "status": "PUBLISHED",
       "published_at_ist": "2026-08-27 04:10 PM IST",
       "ig_media_id": "18327140539263706",
+      "published_by": "GitHub Actions Cloud Runner"
+    },
+    {
+      "id": "post_47fe09aeb2a0",
+      "template": "politics",
+      "category": "BOLLYWOOD HEROINES",
+      "headline": "BOLLYWOOD ACTRESSES KI RECORD FEES:\nDEEPIKA AUR ALIA BHATT CHARGE KAR RAHI RS. 20-30 CR!",
+      "subheadline": "Indian cinema me female leads ne toda pay disparity barrier. Theatrical fee ke alawa OTT streaming rights aur brand royalties se bani multi-crore wealth.",
+      "highlighted_fact": "Rs. 20-30 Cr Per Project | Top Actresses",
+      "caption": "✨ Powerhouse Actresses: Deepika Padukone aur Alia Bhatt ne tode records, le rahi hain RS. 20-30 Crore per film! 👑💎\n\nIndian cinema me female superstars ne apna dabdaba kayam karte hue naye earning benchmarks set kar diye hain! Deepika Padukone aur Alia Bhatt Bollywood ki sabse highest-paid actresses ban chuki hain jo har project ke liye ₹20 se ₹30 Crore tak charge kar rahi hain. Filmo ke alawa OTT rights, international brand ambassadorships aur apne D2C beauty brands (82°E aur Ed-a-Mamma) ke zariye dono actresses ne 500+ Crore ka business empire khada kar liya hai!\n\nDeepika ya Alia — box office par kiska craze sabse zyada hai? Comment karein! 👇💬\n\nSource: <a href=\"https://www.pinkvilla.com\">Pinkvilla Entertainment</a>\n\n#deepikapadukone #aliabhatt #bollywoodactress #highestpaid #womeninpower",
+      "public_video_url": "https://files.catbox.moe/r38ju0.mp4",
+      "created_at_ist": "2026-08-26 09:44 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-08-29 06:56 AM IST",
+      "ig_media_id": "18387008653165433",
       "published_by": "GitHub Actions Cloud Runner"
     }
   ]
