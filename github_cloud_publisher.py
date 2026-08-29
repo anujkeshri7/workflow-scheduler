@@ -7,6 +7,12 @@ import re
 import subprocess
 import sys
 
+if sys.stdout.encoding != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -337,12 +343,12 @@ def process_queue(force=False):
     caption = target_post.get("caption", "")
     video_url = target_post.get("public_video_url", "")
 
-    print(f"\n{'─'*50}")
+    print(f"\n{'='*50}")
     print(f"Publishing Reel:")
     print(f"  ID:       {post_id}")
     print(f"  Headline: {headline[:60].replace(chr(10), ' ')}...")
     print(f"  Video:    {video_url}")
-    print(f"{'─'*50}\n")
+    print(f"{'='*50}\n")
 
     media_id = create_and_publish_reel(video_url, caption)
 

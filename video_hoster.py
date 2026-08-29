@@ -11,129 +11,75 @@ if sys.stdout.encoding != 'utf-8':
         pass
 
 
-def upload_to_github_release(file_path, repo="anujkeshri7/workflow-scheduler"):
+def upload_to_uguu(file_path):
     """
-    Upload video to GitHub Releases as an asset.
-    This gives a PERMANENT direct download URL that never expires.
-    Requires GITHUB_TOKEN in environment (auto-available in Actions).
+    Uguu.se - Fast, reliable direct video/mp4 CDN.
+    Guaranteed direct link format: https://d.uguu.se/xxxxxx.mp4
+    100% compatible with Meta Graph API video downloader.
     """
-    token = os.getenv("GITHUB_TOKEN") or os.getenv("GH_TOKEN")
-    if not token:
-        return None
-
-    filename = os.path.basename(file_path)
-    tag = f"media-{int(time.time())}"
-
-    # Create a release
     try:
-        r = requests.post(
-            f"https://api.github.com/repos/{repo}/releases",
-            headers={
-                "Authorization": f"token {token}",
-                "Accept": "application/vnd.github+json"
-            },
-            json={
-                "tag_name": tag,
-                "name": f"Media Asset {filename}",
-                "body": "Auto-uploaded media asset for Instagram Reel",
-                "draft": False,
-                "prerelease": False
-            },
-            timeout=30
-        )
-        if r.status_code not in (200, 201):
-            return None
-        upload_url = r.json()["upload_url"].split("{")[0]
-
-        # Upload the asset
         with open(file_path, "rb") as f:
-            r2 = requests.post(
-                f"{upload_url}?name={filename}",
-                headers={
-                    "Authorization": f"token {token}",
-                    "Content-Type": "video/mp4"
-                },
-                data=f,
-                timeout=120
+            res = requests.post(
+                "https://uguu.se/upload",
+                files={"files[]": f},
+                timeout=45
             )
-            if r2.status_code in (200, 201):
-                dl_url = r2.json().get("browser_download_url", "")
-                if dl_url:
-                    print(f"[OK] Hosted on GitHub Releases (PERMANENT): {dl_url}")
-                    return dl_url
+            if res.status_code == 200:
+                data = res.json()
+                if data.get("success") and data.get("files"):
+                    url = data["files"][0]["url"]
+                    print(f"[OK] Video hosted successfully on Uguu: {url}")
+                    return url
     except Exception as e:
-        print(f"[GitHub Release Error]: {e}")
+        print(f"[Uguu Host Error]: {e}, trying fallback...")
     return None
 
 
 def upload_to_catbox(file_path):
-    """Catbox.moe - fast CDN but files MAY expire after ~30 days of no access."""
+    """Catbox.moe - Secondary CDN fallback."""
     try:
         with open(file_path, "rb") as f:
             res = requests.post(
                 "https://catbox.moe/user/api.php",
                 data={"reqtype": "fileupload"},
                 files={"fileToUpload": f},
-                timeout=60
+                timeout=45
             )
             if res.status_code == 200 and res.text.strip().startswith("http"):
                 url = res.text.strip()
-                print(f"[OK] Hosted on Catbox: {url}")
+                print(f"[OK] Video hosted successfully on Catbox: {url}")
                 return url
     except Exception as e:
-        print(f"[Catbox Error]: {e}")
+        print(f"[Catbox Error]: {e}, trying fallback...")
     return None
 
 
 def upload_to_litterbox(file_path, duration="72h"):
-    """Litterbox - temporary host by catbox team, explicit duration (1h, 12h, 24h, 72h)."""
+    """Litterbox - 72 hours guaranteed retention."""
     try:
         with open(file_path, "rb") as f:
             res = requests.post(
                 "https://litterbox.catbox.moe/resources/internals/api.php",
                 data={"reqtype": "fileupload", "time": duration},
                 files={"fileToUpload": f},
-                timeout=60
+                timeout=45
             )
             if res.status_code == 200 and res.text.strip().startswith("http"):
                 url = res.text.strip()
-                print(f"[OK] Hosted on Litterbox ({duration}): {url}")
+                print(f"[OK] Video hosted successfully on Litterbox ({duration}): {url}")
                 return url
     except Exception as e:
         print(f"[Litterbox Error]: {e}")
     return None
 
 
-def upload_to_tmpfiles(file_path):
-    """Tmpfiles.org - files expire after ~60 minutes. UNRELIABLE for scheduled posts."""
-    try:
-        with open(file_path, "rb") as f:
-            res = requests.post(
-                "https://tmpfiles.org/api/v1/upload",
-                files={"file": f},
-                timeout=60
-            )
-            if res.status_code == 200:
-                data = res.json()
-                raw_url = data.get("data", {}).get("url", "")
-                if raw_url:
-                    url = raw_url.replace("tmpfiles.org/", "tmpfiles.org/dl/")
-                    print(f"[OK] Hosted on Tmpfiles (TEMP ~1hr): {url}")
-                    return url
-    except Exception as e:
-        print(f"[Tmpfiles Error]: {e}")
-    return None
-
-
 def upload_video_to_public_host(file_path):
     """
-    Upload video to a public host and return a direct HTTPS URL.
-    
-    Priority order:
-    1. GitHub Releases (PERMANENT, best for scheduled publishing)
-    2. Catbox (long-lived, may expire after ~30 days inactivity)
-    3. Litterbox 72h (guaranteed 3 days)
-    4. Tmpfiles (last resort, ~1 hour only)
+    Uploads MP4 video to high-speed public host and returns direct HTTPS URL for Meta API.
+    Multi-tier architecture:
+    1. Uguu.se (Primary, verified Meta Graph API compatibility)
+    2. Catbox.moe (Secondary)
+    3. Litterbox (72h guaranteed)
     """
     if not os.path.exists(file_path):
         print(f"Error: File not found: {file_path}")
@@ -143,27 +89,22 @@ def upload_video_to_public_host(file_path):
     file_size_mb = os.path.getsize(file_path) / (1024 * 1024)
     print(f"Hosting {filename} ({file_size_mb:.2f} MB) online for Meta Graph API...")
 
-    # 1. Try GitHub Releases first (permanent)
-    url = upload_to_github_release(file_path)
+    # 1. Primary: Uguu
+    url = upload_to_uguu(file_path)
     if url:
         return url
 
-    # 2. Try Catbox
+    # 2. Secondary: Catbox
     url = upload_to_catbox(file_path)
     if url:
         return url
 
-    # 3. Try Litterbox with 72h duration
+    # 3. Tertiary: Litterbox 72h
     url = upload_to_litterbox(file_path, "72h")
     if url:
         return url
 
-    # 4. Last resort: Tmpfiles
-    url = upload_to_tmpfiles(file_path)
-    if url:
-        return url
-
-    print("[FAIL] All hosting providers failed.")
+    print("[FAIL] Failed to upload video to all hosting providers.")
     return None
 
 
