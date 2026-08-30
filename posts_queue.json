@@ -12,7 +12,7 @@
       "public_video_url": "https://n.uguu.se/JVazQQrg.mp4",
       "created_at_ist": "2026-08-29 09:44 PM IST",
       "status": "PENDING",
-      "_fail_count": 1
+      "_fail_count": 2
     },
     {
       "id": "post_4548560d2b27",
@@ -25,7 +25,7 @@
       "public_video_url": "https://h.uguu.se/FXuCYJmk.mp4",
       "created_at_ist": "2026-08-29 09:44 PM IST",
       "status": "PENDING",
-      "_fail_count": 1
+      "_fail_count": 2
     },
     {
       "id": "post_9551253cc9c1",
@@ -38,7 +38,7 @@
       "public_video_url": "https://h.uguu.se/ZUjvFPHE.mp4",
       "created_at_ist": "2026-08-29 09:44 PM IST",
       "status": "PENDING",
-      "_fail_count": 1
+      "_fail_count": 2
     }
   ],
   "published_posts": [
