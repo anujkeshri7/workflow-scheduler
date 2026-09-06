@@ -2,18 +2,6 @@
   "queue_version": "1.0",
   "pending_posts": [
     {
-      "id": "post_4077d7c203f9",
-      "template": "business",
-      "category": "FINTECH & BUSINESS",
-      "headline": "ZERODHA KA DALAL STREET PAR BADA DHAMAKA:\nSEBI SE MILA CATEGORY-1 INVESTMENT BANKING LICENSE!",
-      "subheadline": "Kamath brothers ab manage karenge mega corporate IPOs aur underwriting. Traditional foreign aur private investment banks ko mili direct chunauti.",
-      "highlighted_fact": "SEBI Cat-1 Merchant License | IPO Management",
-      "caption": "📈 Dalal Street Revolution: Zerodha ne li investment banking me entry, SEBI se mila Category-1 Merchant Banking license! 💼💸\n\nDesh ke sabse bade discount retail broker Zerodha ne Indian financial market me naya tehelka macha diya hai! SEBI ne Zerodha Corporate Advisors ko Category-1 Merchant Banking license grant kar diya hai, jiske tehat ab Nithin aur Nikhil Kamath ki company corporate IPOs, QIPs, debt issuances aur underwriting direct handle karegi. Wall Street aur traditional Indian investment banks ke liye yeh direct challenge banne ja raha hai kyunki Zerodha apne massive tech infrastructure se IPO management ko low-cost aur automated banane ki taiyari me hai!\n\nKya Zerodha IPO investment banking market ko poori tarah badal dega? Comment karein! 👇💬\n\nSource: <a href=\"https://www.sebi.gov.in\">SEBI & Financial Express</a>\n\n#zerodha #dalalstreet #stockmarketindia #ipo #fintechnews",
-      "public_video_url": "https://d.uguu.se/QjgUUYHP.mp4",
-      "created_at_ist": "2026-09-06 02:56 PM IST",
-      "status": "PENDING"
-    },
-    {
       "id": "post_41265b4a93e5",
       "template": "politics",
       "category": "CRIME & FINANCIAL BUST",
@@ -271,6 +259,21 @@
       "status": "PUBLISHED",
       "published_at_ist": "2026-09-06 05:42 PM IST",
       "ig_media_id": "18111329182843498",
+      "published_by": "GitHub Actions Cloud Runner"
+    },
+    {
+      "id": "post_4077d7c203f9",
+      "template": "business",
+      "category": "FINTECH & BUSINESS",
+      "headline": "ZERODHA KA DALAL STREET PAR BADA DHAMAKA:\nSEBI SE MILA CATEGORY-1 INVESTMENT BANKING LICENSE!",
+      "subheadline": "Kamath brothers ab manage karenge mega corporate IPOs aur underwriting. Traditional foreign aur private investment banks ko mili direct chunauti.",
+      "highlighted_fact": "SEBI Cat-1 Merchant License | IPO Management",
+      "caption": "📈 Dalal Street Revolution: Zerodha ne li investment banking me entry, SEBI se mila Category-1 Merchant Banking license! 💼💸\n\nDesh ke sabse bade discount retail broker Zerodha ne Indian financial market me naya tehelka macha diya hai! SEBI ne Zerodha Corporate Advisors ko Category-1 Merchant Banking license grant kar diya hai, jiske tehat ab Nithin aur Nikhil Kamath ki company corporate IPOs, QIPs, debt issuances aur underwriting direct handle karegi. Wall Street aur traditional Indian investment banks ke liye yeh direct challenge banne ja raha hai kyunki Zerodha apne massive tech infrastructure se IPO management ko low-cost aur automated banane ki taiyari me hai!\n\nKya Zerodha IPO investment banking market ko poori tarah badal dega? Comment karein! 👇💬\n\nSource: <a href=\"https://www.sebi.gov.in\">SEBI & Financial Express</a>\n\n#zerodha #dalalstreet #stockmarketindia #ipo #fintechnews",
+      "public_video_url": "https://d.uguu.se/QjgUUYHP.mp4",
+      "created_at_ist": "2026-09-06 02:56 PM IST",
+      "status": "PUBLISHED",
+      "published_at_ist": "2026-09-06 07:49 PM IST",
+      "ig_media_id": "18037784801832410",
       "published_by": "GitHub Actions Cloud Runner"
     }
   ],
