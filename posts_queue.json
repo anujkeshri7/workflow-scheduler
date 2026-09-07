@@ -12,7 +12,7 @@
       "public_video_url": "https://d.uguu.se/ZidHQszA.mp4",
       "created_at_ist": "2026-09-06 02:56 PM IST",
       "status": "PENDING",
-      "_fail_count": 1
+      "_fail_count": 2
     },
     {
       "id": "post_e2336f79385e",
@@ -25,7 +25,7 @@
       "public_video_url": "https://d.uguu.se/rGwFHXEu.mp4",
       "created_at_ist": "2026-09-06 07:16 PM IST",
       "status": "PENDING",
-      "_fail_count": 1
+      "_fail_count": 2
     },
     {
       "id": "post_efcd528b87ac",
@@ -38,7 +38,7 @@
       "public_video_url": "https://d.uguu.se/byvaltkD.mp4",
       "created_at_ist": "2026-09-06 07:16 PM IST",
       "status": "PENDING",
-      "_fail_count": 1
+      "_fail_count": 2
     },
     {
       "id": "post_3bfacc6257e7",
@@ -51,7 +51,7 @@
       "public_video_url": "https://n.uguu.se/gCoSsrzY.mp4",
       "created_at_ist": "2026-09-06 07:16 PM IST",
       "status": "PENDING",
-      "_fail_count": 1
+      "_fail_count": 2
     }
   ],
   "published_posts": [
