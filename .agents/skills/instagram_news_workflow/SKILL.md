@@ -91,8 +91,8 @@ Every caption MUST strictly follow this exact 4-part structure:
      - Reaction Clip Audio: **100% volume** (`volume=1.0`).
      - News Background Music: **100% volume** (`volume=1.0`) with smooth fade-in/out.
      - Mixed together via `amix=inputs=2:duration=first:dropout_transition=2`.
-   - **Rotating News Background Soundtracks**:
-     - Rotate distinct breaking/urgent news sounds across batch (`breaking_news_sound.mp3`, `urgent_news_sound.mp3`, `breaking_news_countdown.mp3`).
+   - **Exclusive News Background Soundtracks**:
+     - Exclusively rotate tracks from `/music/` folder: `Breaking News sound1.mp3`, `Breaking News sound2.mp3`, `Breaking News sound3.mp3`. Do not use any other background music.
 3. **Telegram Delivery**: Run `python clear_batch_history.py; python telegram_sender.py` to deliver images, videos and formatted captions to Telegram.
 4. **Queue for 9-Slot Cloud Scheduling**: Run `python queue_manager.py` to append the newly generated posts to `posts_queue.json` and sync with GitHub.
 5. In chat, provide **Bollywood Music Recommendations** for each story.
