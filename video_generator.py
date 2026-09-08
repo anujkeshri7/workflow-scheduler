@@ -30,11 +30,11 @@ def get_clip_duration(clip_path):
     return 7.1
 
 
+BREAKING_NEWS_DIR = os.path.join(os.path.dirname(__file__), "music")
 NEWS_AUDIO_TRACKS = [
-    os.path.join(MUSIC_DIR, "breaking_news_sound.mp3"),
-    os.path.join(MUSIC_DIR, "urgent_news_sound.mp3"),
-    os.path.join(MUSIC_DIR, "breaking_news_countdown.mp3"),
-    os.path.join(MUSIC_DIR, "breaking_alert.mp3")
+    os.path.join(BREAKING_NEWS_DIR, "Breaking News sound1.mp3"),
+    os.path.join(BREAKING_NEWS_DIR, "Breaking News sound2.mp3"),
+    os.path.join(BREAKING_NEWS_DIR, "Breaking News sound3.mp3"),
 ]
 
 
