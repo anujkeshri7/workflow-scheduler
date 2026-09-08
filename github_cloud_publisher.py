@@ -28,7 +28,7 @@ GRAPH_VERSION = "v19.0"
 MIN_GAP_MINUTES = 35
 
 # Maximum consecutive failures before skipping a post
-MAX_FAIL_COUNT = 2
+MAX_FAIL_COUNT = 3
 
 
 def get_current_ist_time():
