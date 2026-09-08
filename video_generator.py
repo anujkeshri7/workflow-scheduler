@@ -30,13 +30,21 @@ def get_clip_duration(clip_path):
     return 7.1
 
 
-def create_reel_video(image_path, audio_path=None, output_mp4=None, clip_path=None, duration=None, mix_bg_music=False):
+NEWS_AUDIO_TRACKS = [
+    os.path.join(MUSIC_DIR, "breaking_news_sound.mp3"),
+    os.path.join(MUSIC_DIR, "urgent_news_sound.mp3"),
+    os.path.join(MUSIC_DIR, "breaking_news_countdown.mp3"),
+    os.path.join(MUSIC_DIR, "breaking_alert.mp3")
+]
+
+
+def create_reel_video(image_path, audio_path=None, output_mp4=None, clip_path=None, duration=7.0, clip_start_offset=1.0, mix_bg_music=True):
     """
     Creates a 9:16 (1080x1920) Instagram Reel with split layout:
     - UPPER PORTION (0 to 1350 px): 1080x1350 Crisp News Graphic Card
-    - BOTTOM PORTION (1350 to 1920 px): 1080x570 Video Clip (e.g. Speed reaction)
-    - AUDIO: Video Clip audio at 100% (volume=1.0) with smooth fade-in and fade-out.
-             Optional background music mixed at lower volume if mix_bg_music=True.
+    - BOTTOM PORTION (1350 to 1920 px): 1080x570 Video Clip (trimmed starting from 1.0s)
+    - AUDIO: Video Clip audio at 100% (volume=1.0) + News BG Music at 100% (volume=1.0) mixed together,
+             with smooth fade-in and fade-out.
     """
     if not os.path.exists(image_path):
         print(f"Error: Image not found: {image_path}")
@@ -54,38 +62,32 @@ def create_reel_video(image_path, audio_path=None, output_mp4=None, clip_path=No
         else:
             clip_path = None
 
-    # Determine duration
     if duration is None:
-        if clip_path and os.path.exists(clip_path):
-            clip_dur = get_clip_duration(clip_path)
-            # Default to clip duration (max 10s for snappy retention)
-            duration = min(clip_dur, 7.5)
-        else:
-            duration = 7.5
+        duration = 7.0
 
     fade_out_start = max(0.5, duration - 0.8)
 
     # Case 1: Split layout with Video Clip at bottom
     if clip_path and os.path.exists(clip_path):
-        print(f"Applying Split Layout (Top Post + Bottom Clip: {os.path.basename(clip_path)})...")
+        print(f"Applying Split Layout (Top Post + Bottom Clip: {os.path.basename(clip_path)}, offset={clip_start_offset}s)...")
 
         if mix_bg_music and audio_path and os.path.exists(audio_path):
-            # Mix clip audio at 50% + bg music at 35%
+            print(f"Mixing Audio: 100% Clip Audio + 100% News BG Music ({os.path.basename(audio_path)})...")
             filter_complex = (
                 f"color=c=black:s=1080x1920:d={duration}[base];"
                 f"[0:v]scale=1080:1350[top_post];"
                 f"[1:v]scale=1080:570:force_original_aspect_ratio=increase,crop=1080:570[bottom_clip];"
                 f"[base][top_post]overlay=x=0:y=0[temp];"
                 f"[temp][bottom_clip]overlay=x=0:y=1350[v];"
-                f"[1:a]volume=0.50[a_clip];"
-                f"[2:a]volume=0.35,afade=t=in:ss=0:d=0.02,afade=t=out:st={fade_out_start}:d=0.8[a_bg];"
+                f"[1:a]volume=1.0,afade=t=in:ss=0:d=0.05,afade=t=out:st={fade_out_start}:d=0.8[a_clip];"
+                f"[2:a]volume=1.0,afade=t=in:ss=0:d=0.05,afade=t=out:st={fade_out_start}:d=0.8[a_bg];"
                 f"[a_clip][a_bg]amix=inputs=2:duration=first:dropout_transition=2[a]"
             )
             cmd = [
                 "ffmpeg", "-y",
                 "-loop", "1", "-i", image_path,
-                "-ss", "00:00:00", "-i", clip_path,
-                "-i", audio_path,
+                "-ss", str(clip_start_offset), "-i", clip_path,
+                "-stream_loop", "-1", "-i", audio_path,
                 "-filter_complex", filter_complex,
                 "-map", "[v]",
                 "-map", "[a]",
@@ -99,19 +101,19 @@ def create_reel_video(image_path, audio_path=None, output_mp4=None, clip_path=No
                 output_mp4
             ]
         else:
-            # 100% Clip audio (Standard reference style)
+            # 100% Clip audio only
             filter_complex = (
                 f"color=c=black:s=1080x1920:d={duration}[base];"
                 f"[0:v]scale=1080:1350[top_post];"
                 f"[1:v]scale=1080:570:force_original_aspect_ratio=increase,crop=1080:570[bottom_clip];"
                 f"[base][top_post]overlay=x=0:y=0[temp];"
                 f"[temp][bottom_clip]overlay=x=0:y=1350[v];"
-                f"[1:a]volume=1.0,afade=t=in:ss=0:d=0.02,afade=t=out:st={fade_out_start}:d=0.8[a]"
+                f"[1:a]volume=1.0,afade=t=in:ss=0:d=0.05,afade=t=out:st={fade_out_start}:d=0.8[a]"
             )
             cmd = [
                 "ffmpeg", "-y",
                 "-loop", "1", "-i", image_path,
-                "-ss", "00:00:00", "-i", clip_path,
+                "-ss", str(clip_start_offset), "-i", clip_path,
                 "-filter_complex", filter_complex,
                 "-map", "[v]",
                 "-map", "[a]",
@@ -128,19 +130,19 @@ def create_reel_video(image_path, audio_path=None, output_mp4=None, clip_path=No
     # Case 2: Fallback (Blurred background with full post card if no clip provided)
     else:
         if not audio_path or not os.path.exists(audio_path):
-            audio_path = os.path.join(MUSIC_DIR, "default.mp3")
+            audio_path = NEWS_AUDIO_TRACKS[0]
 
         filter_complex = (
             "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
             "gblur=sigma=32,eq=brightness=-0.25:contrast=0.85[bg];"
             "[0:v]scale=1080:1350[fg];"
             "[bg][fg]overlay=x=(W-w)/2:y=(H-h)/2[v];"
-            f"[1:a]afade=t=in:ss=0:d=0.02,afade=t=out:st={fade_out_start}:d=0.8[a]"
+            f"[1:a]afade=t=in:ss=0:d=0.05,afade=t=out:st={fade_out_start}:d=0.8[a]"
         )
         cmd = [
             "ffmpeg", "-y",
             "-loop", "1", "-i", image_path,
-            "-i", audio_path,
+            "-stream_loop", "-1", "-i", audio_path,
             "-filter_complex", filter_complex,
             "-map", "[v]",
             "-map", "[a]",
@@ -174,7 +176,8 @@ def generate_reels_from_data_file(data_file="daily_news_data.json"):
         data = json.load(f)
 
     rendered_videos = []
-    for idx, post in enumerate(data.get("posts", []), 1):
+    posts = data.get("posts", [])
+    for idx, post in enumerate(posts, 1):
         img_path = post.get("out_path", "")
         if not img_path or not os.path.exists(img_path):
             img_path = post.get("image_path", "")
@@ -184,21 +187,25 @@ def generate_reels_from_data_file(data_file="daily_news_data.json"):
         video_out = os.path.join(out_dir, base_name)
 
         clip_path = post.get("clip_path") or DEFAULT_CLIP_PATH
-        audio_track = post.get("audio_path")
+
+        # Assign distinct news sound track per video in the batch
+        audio_track = NEWS_AUDIO_TRACKS[(idx - 1) % len(NEWS_AUDIO_TRACKS)]
+        post["audio_path"] = audio_track
 
         success = create_reel_video(
             image_path=img_path,
             audio_path=audio_track,
             output_mp4=video_out,
             clip_path=clip_path,
-            duration=7.1,
-            mix_bg_music=False
+            duration=7.0,
+            clip_start_offset=1.0,
+            mix_bg_music=True
         )
         if success:
             post["video_path"] = video_out
             rendered_videos.append(video_out)
 
-    # Save back updated json with video paths
+    # Save back updated json with audio and video paths
     with open(data_file, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 

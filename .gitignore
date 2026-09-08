@@ -18,3 +18,5 @@ __pycache__/
 # Heavy raw media (we use public URLs in cloud)
 assets/music/custom/*.webm
 assets/music/custom/temp_*
+clip.mp4
+reference video.mp4
