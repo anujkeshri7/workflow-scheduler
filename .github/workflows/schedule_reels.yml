@@ -1,11 +1,8 @@
-name: Instagram Reels Autonomous Cloud Scheduler
+name: Instagram Reels Manual Publisher (Disabled Auto-Schedule)
 
 on:
-  schedule:
-    # Runs every 30 minutes to check and publish queued reels with zero drop
-    - cron: '*/30 * * * *'
   workflow_dispatch:
-    # Allows manual trigger at any time from GitHub Actions UI
+    # Manual trigger only — run from GitHub Actions UI when needed
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'

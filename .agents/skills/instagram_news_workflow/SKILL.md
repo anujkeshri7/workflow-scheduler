@@ -93,6 +93,13 @@ Every caption MUST strictly follow this exact 4-part structure:
      - Mixed together via `amix=inputs=2:duration=first:dropout_transition=2`.
    - **Exclusive News Background Soundtracks**:
      - Exclusively rotate tracks from `/music/` folder: `Breaking News sound1.mp3`, `Breaking News sound2.mp3`, `Breaking News sound3.mp3`. Do not use any other background music.
-3. **Telegram Delivery**: Run `python clear_batch_history.py; python telegram_sender.py` to deliver images, videos and formatted captions to Telegram.
-4. **Queue for 9-Slot Cloud Scheduling**: Run `python queue_manager.py` to append the newly generated posts to `posts_queue.json` and sync with GitHub.
+3. **Telegram Delivery**: Run `python clear_batch_history.py; python telegram_sender.py` to deliver all reels to Telegram.
+4. **Instant Instagram Publish (MANUAL — NO scheduler)**:
+   - Run `python instant_publisher.py` to **publish Post #1 immediately to Instagram**.
+   - Posts #2 and #3 are saved to `local_pending_posts.json` on local PC only (NOT pushed to GitHub).
+   - After running, report to the user in chat: "Post #1 published live! X posts remaining locally."
+   - When user says **"publish 2nd"** or **"publish remaining"** → run `python instant_publisher.py --remaining` to publish next pending post.
+   - When user says **"run the workflow"** and there are no pending local posts → create fresh news posts.
+   - To check status anytime: `python instant_publisher.py --status`
 5. In chat, provide **Bollywood Music Recommendations** for each story.
+
